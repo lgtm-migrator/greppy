@@ -103,7 +103,6 @@ Installation
 .. start installation
 
 .. installation:: greppy
-
 	:github:
 
 .. end installation
