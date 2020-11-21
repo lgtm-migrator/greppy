@@ -25,6 +25,5 @@ sphinx_html_theme: furo
 
 standalone_contrib_guide: true
 
-
 extra_sphinx_extensions:
  - sphinx_click
