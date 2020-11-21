@@ -15,6 +15,8 @@ greppy
 	:stub-columns: 1
 	:widths: 10 90
 
+	* - Docs
+	  - |docs| |docs_check|
 	* - Tests
 	  - |travis| |actions_windows| |actions_macos| |codefactor| |pre_commit_ci|
 
@@ -23,7 +25,13 @@ greppy
 	* - Other
 	  - |license| |language| |requires| |pre_commit|
 
+.. |docs| image:: https://img.shields.io/readthedocs/greppy/latest?logo=read-the-docs
+	:target: https://greppy.readthedocs.io/en/latest/?badge=latest
+	:alt: Documentation Build Status
 
+.. |docs_check| image:: https://github.com/domdfcoding/greppy/workflows/Docs%20Check/badge.svg
+	:target: https://github.com/domdfcoding/greppy/actions?query=workflow%3A%22Docs+Check%22
+	:alt: Docs Check Status
 
 .. |travis| image:: https://github.com/domdfcoding/greppy/workflows/Linux%20Tests/badge.svg
 	:target: https://github.com/domdfcoding/greppy/actions?query=workflow%3A%22Linux+Tests%22
