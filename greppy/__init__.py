@@ -86,7 +86,8 @@ def greppy(
 				break
 		else:
 			searched_files += 1
-			lines = filename.read_lines()
+			# TODO: waiting on mypy including latest typeshed.
+			lines = filename.read_lines()  # type: ignore
 
 			for lineno, content in enumerate(lines):
 				for match in pattern.finditer(content):

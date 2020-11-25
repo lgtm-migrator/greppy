@@ -27,3 +27,6 @@ standalone_contrib_guide: true
 
 extra_sphinx_extensions:
  - sphinx_click
+
+# Ref: https://github.com/python/mypy/issues/8944
+mypy_version: "0.770"
