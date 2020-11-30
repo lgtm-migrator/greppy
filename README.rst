@@ -100,6 +100,14 @@ greppy
 Installation
 --------------
 
-
 .. start installation
+
+``greppy`` can be installed from GitHub.
+
+To install with ``pip``:
+
+.. code-block:: bash
+
+	$ python -m pip install git+https://github.com/domdfcoding/greppy
+
 .. end installation
