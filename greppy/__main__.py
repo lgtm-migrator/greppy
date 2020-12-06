@@ -51,7 +51,12 @@ __all__ = ["main"]
 @click.option("-s", "--summary", is_flag=True, default=False, help="Show a summary of the results.")
 @click.option("-i", "--ignore-case", is_flag=True, default=False, help="Ignore case.")
 @click_command()
-def main(pattern, dir: str = '.', summary: bool = False, ignore_case: bool = False):
+def main(
+		pattern,
+		dir: str = '.',  # noqa: A002
+		summary: bool = False,
+		ignore_case: bool = False,
+		):
 	"""
 	Recursively grep over Python files in the files in the given directory, and search for PATTERN.
 	"""

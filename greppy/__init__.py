@@ -52,7 +52,7 @@ exclude_dirs = {"venv", ".venv", ".git", ".tox"}
 
 def greppy(
 		pattern: Union[Pattern, str],
-		dir: PathLike = '.',
+		dir: PathLike = '.',  # noqa: A002
 		summary: bool = False,
 		file: IO = None,
 		):
