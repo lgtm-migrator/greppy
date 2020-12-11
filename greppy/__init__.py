@@ -52,7 +52,7 @@ exclude_dirs = {"venv", ".venv", ".git", ".tox"}
 
 def greppy(
 		pattern: Union[Pattern, str],
-		dir: PathLike = '.',  # noqa: A002
+		dir: PathLike = '.',  # noqa: A002  # pylint: disable=redefined-builtin
 		summary: bool = False,
 		file: IO = None,
 		):
@@ -103,9 +103,7 @@ def greppy(
 								lexer_name="python",
 								line_numbers=True,
 								start_line=lineno - 2,
-								highlight_lines={
-										lineno,
-										},
+								highlight_lines={lineno},
 								)
 						console.print(syntax)
 						echo('-' * console.width)

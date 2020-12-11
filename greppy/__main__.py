@@ -53,7 +53,7 @@ __all__ = ["main"]
 @click_command()
 def main(
 		pattern,
-		dir: str = '.',  # noqa: A002
+		dir: str = '.',  # noqa: A002  # pylint: disable=redefined-builtin
 		summary: bool = False,
 		ignore_case: bool = False,
 		):
