@@ -17,8 +17,7 @@ greppy
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |travis| |actions_windows| |actions_macos| |codefactor| |pre_commit_ci|
-
+	  - |actions_linux| |actions_windows| |actions_macos| |codefactor| |pre_commit_ci|
 	* - Activity
 	  - |commits-latest| |commits-since| |maintained|
 	* - Other
@@ -32,7 +31,7 @@ greppy
 	:workflow: Docs Check
 	:alt: Docs Check Status
 
-.. |travis| actions-shield::
+.. |actions_linux| actions-shield::
 	:workflow: Linux Tests
 	:alt: Linux Test Status
 
@@ -49,26 +48,6 @@ greppy
 
 .. |codefactor| codefactor-shield::
 	:alt: CodeFactor Grade
-
-.. |pypi-version| pypi-shield::
-	:project: greppy
-	:version:
-	:alt: PyPI - Package Version
-
-.. |supported-versions| pypi-shield::
-	:project: greppy
-	:py-versions:
-	:alt: PyPI - Supported Python Versions
-
-.. |supported-implementations| pypi-shield::
-	:project: greppy
-	:implementations:
-	:alt: PyPI - Supported Implementations
-
-.. |wheel| pypi-shield::
-	:project: greppy
-	:wheel:
-	:alt: PyPI - Wheel
 
 .. |license| github-shield::
 	:license:

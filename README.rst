@@ -18,8 +18,7 @@ greppy
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |travis| |actions_windows| |actions_macos| |codefactor| |pre_commit_ci|
-
+	  - |actions_linux| |actions_windows| |actions_macos| |codefactor| |pre_commit_ci|
 	* - Activity
 	  - |commits-latest| |commits-since| |maintained|
 	* - Other
@@ -33,7 +32,7 @@ greppy
 	:target: https://github.com/domdfcoding/greppy/actions?query=workflow%3A%22Docs+Check%22
 	:alt: Docs Check Status
 
-.. |travis| image:: https://github.com/domdfcoding/greppy/workflows/Linux%20Tests/badge.svg
+.. |actions_linux| image:: https://github.com/domdfcoding/greppy/workflows/Linux%20Tests/badge.svg
 	:target: https://github.com/domdfcoding/greppy/actions?query=workflow%3A%22Linux+Tests%22
 	:alt: Linux Test Status
 
@@ -52,22 +51,6 @@ greppy
 .. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/greppy?logo=codefactor
 	:target: https://www.codefactor.io/repository/github/domdfcoding/greppy
 	:alt: CodeFactor Grade
-
-.. |pypi-version| image:: https://img.shields.io/pypi/v/greppy
-	:target: https://pypi.org/project/greppy/
-	:alt: PyPI - Package Version
-
-.. |supported-versions| image:: https://img.shields.io/pypi/pyversions/greppy?logo=python&logoColor=white
-	:target: https://pypi.org/project/greppy/
-	:alt: PyPI - Supported Python Versions
-
-.. |supported-implementations| image:: https://img.shields.io/pypi/implementation/greppy
-	:target: https://pypi.org/project/greppy/
-	:alt: PyPI - Supported Implementations
-
-.. |wheel| image:: https://img.shields.io/pypi/wheel/greppy
-	:target: https://pypi.org/project/greppy/
-	:alt: PyPI - Wheel
 
 .. |license| image:: https://img.shields.io/github/license/domdfcoding/greppy
 	:target: https://github.com/domdfcoding/greppy/blob/master/LICENSE
