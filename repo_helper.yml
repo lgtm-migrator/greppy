@@ -30,3 +30,6 @@ extra_sphinx_extensions:
 
 # Ref: https://github.com/python/mypy/issues/8944
 mypy_version: "0.770"
+
+console_scripts:
+ - "greppy=greppy.__main__:main"

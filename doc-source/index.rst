@@ -19,7 +19,7 @@ greppy
 	* - Tests
 	  - |actions_linux| |actions_windows| |actions_macos|
 	* - Activity
-	  - |commits-latest| |commits-since| |maintained| |pypi-downloads|
+	  - |commits-latest| |commits-since| |maintained|
 	* - QA
 	  - |codefactor| |actions_flake8| |actions_mypy| |pre_commit_ci|
 	* - Other
@@ -75,13 +75,8 @@ greppy
 	:last-commit:
 	:alt: GitHub last commit
 
-.. |maintained| maintained-shield:: 2020
+.. |maintained| maintained-shield:: 2021
 	:alt: Maintenance
-
-.. |pypi-downloads| pypi-shield::
-	:project: greppy
-	:downloads: month
-	:alt: PyPI - Downloads
 
 .. |pre_commit_ci| pre-commit-ci-shield::
 	:alt: pre-commit.ci status
