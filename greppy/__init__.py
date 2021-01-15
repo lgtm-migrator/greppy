@@ -47,7 +47,7 @@ __email__: str = "dominic@davis-foster.co.uk"
 
 __all__ = ["greppy", "exclude_dirs"]
 
-exclude_dirs = {"venv", ".venv", ".git", ".tox"}
+exclude_dirs = {"venv", ".venv", ".git", ".tox", ".tox4"}
 
 
 def greppy(
