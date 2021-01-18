@@ -81,7 +81,11 @@ def greppy(
 			continue
 
 		searched_files += 1
-		lines = filename.read_lines()
+		try:
+			lines = filename.read_lines()
+		except UnicodeDecodeError as e:
+			click.echo(f"Error reading {filename}: {e}", err=True)
+			continue
 
 		for lineno, content in enumerate(lines):
 			for match in pattern.finditer(content):
