@@ -45,9 +45,7 @@ __license__: str = "MIT License"
 __version__: str = "0.0.0"
 __email__: str = "dominic@davis-foster.co.uk"
 
-__all__ = ["greppy", "exclude_dirs"]
-
-exclude_dirs = {"venv", ".venv", ".git", ".tox", ".tox4"}
+__all__ = ["greppy"]
 
 
 def greppy(
@@ -77,39 +75,35 @@ def greppy(
 	match_count = 0
 	searched_files = 0
 
-	for filename in PathPlus(dir).rglob("*.py"):
+	for filename in PathPlus(dir).iterchildren(match="**/*.py"):
 
-		for exclude_dir in exclude_dirs:
-			if exclude_dir in filename.parts:
+		if filename.suffix != ".py" or "build/lib" in filename.as_posix():
+			continue
+
+		searched_files += 1
+		lines = filename.read_lines()
+
+		for lineno, content in enumerate(lines):
+			for match in pattern.finditer(content):
+				matching_files.add(filename)
+
+				if summary:
+					echo(f"{filename}:{lineno}:{match.span()[0]} Matches")
+				else:
+					echo(f"{filename}:{lineno}:{match.span()[0]}")
+
+					syntax = Syntax(
+							'\n'.join(lines[lineno - 2:lineno + 3]),
+							lexer_name="python",
+							line_numbers=True,
+							start_line=lineno - 2,
+							highlight_lines={lineno},
+							)
+					console.print(syntax)
+					echo('-' * console.width)
+
+				match_count += 1
 				break
-			elif os.path.join("build", "lib") in str(filename):
-				break
-		else:
-			searched_files += 1
-			# TODO: waiting on mypy including latest typeshed.
-			lines = filename.read_lines()  # type: ignore
-
-			for lineno, content in enumerate(lines):
-				for match in pattern.finditer(content):
-					matching_files.add(filename)
-
-					if summary:
-						echo(f"{filename}:{lineno}:{match.span()[0]} Matches")
-					else:
-						echo(f"{filename}:{lineno}:{match.span()[0]}")
-
-						syntax = Syntax(
-								'\n'.join(lines[lineno - 2:lineno + 3]),
-								lexer_name="python",
-								line_numbers=True,
-								start_line=lineno - 2,
-								highlight_lines={lineno},
-								)
-						console.print(syntax)
-						echo('-' * console.width)
-
-					match_count += 1
-					break
 
 	if match_count:
 		echo(f"{match_count} matches in {len(matching_files)} files (searched {searched_files} files).")
