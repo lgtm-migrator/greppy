@@ -77,7 +77,9 @@ def greppy(
 
 	for filename in PathPlus(dir).iterchildren(match="**/*.py"):
 
-		if filename.suffix != ".py" or "build/lib" in filename.as_posix():
+		if filename.suffix != ".py":
+			continue
+		if "build/lib" in filename.as_posix() or "build/repo_helper_build" in filename.as_posix():
 			continue
 
 		searched_files += 1
