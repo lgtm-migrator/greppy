@@ -27,10 +27,9 @@ greppy: Recursively grep over Python files in the files in the given directory.
 #
 
 # stdlib
-import os
 import re
 from functools import partial
-from typing import IO, Pattern, Union
+from typing import IO, Pattern, Set, Union
 
 # 3rd party
 import click
@@ -53,7 +52,7 @@ def greppy(
 		dir: PathLike = '.',  # noqa: A002  # pylint: disable=redefined-builtin
 		summary: bool = False,
 		file: IO = None,
-		):
+		) -> Set[PathPlus]:
 	"""
 	Recursively grep over Python files in the files in the given directory, and search for ``pattern``.
 
@@ -70,7 +69,7 @@ def greppy(
 	console = Console(file=file)
 	echo = partial(click.echo, file=file)
 
-	matching_files = set()
+	matching_files: Set[PathPlus] = set()
 	match_count = 0
 	searched_files = 0
 
@@ -123,3 +122,5 @@ def greppy(
 		echo(f"{match_count} matches in {len(matching_files)} files (searched {searched_files} files).")
 	else:
 		echo(f"No matches across {searched_files} files.")
+
+	return matching_files
