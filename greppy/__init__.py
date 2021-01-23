@@ -68,7 +68,6 @@ def greppy(
 		pattern = re.compile(pattern)
 
 	console = Console(file=file)
-
 	echo = partial(click.echo, file=file)
 
 	matching_files = set()
@@ -83,6 +82,7 @@ def greppy(
 			continue
 
 		searched_files += 1
+
 		try:
 			lines = filename.read_lines()
 		except UnicodeDecodeError as e:
@@ -90,6 +90,7 @@ def greppy(
 			continue
 
 		for lineno, content in enumerate(lines):
+			lineno += 1
 			for match in pattern.finditer(content):
 				matching_files.add(filename)
 
@@ -98,11 +99,18 @@ def greppy(
 				else:
 					echo(f"{filename}:{lineno}:{match.span()[0]}")
 
+					context = lines[lineno - 3:lineno + 2]
+					start_line = lineno - 2
+
+					while not context[0]:
+						context.pop(0)
+						start_line += 1
+
 					syntax = Syntax(
-							'\n'.join(lines[lineno - 2:lineno + 3]),
+							'\n'.join(context),
 							lexer_name="python",
 							line_numbers=True,
-							start_line=lineno - 2,
+							start_line=start_line,
 							highlight_lines={lineno},
 							)
 					console.print(syntax)
