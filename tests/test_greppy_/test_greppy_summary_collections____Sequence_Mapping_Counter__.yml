@@ -1,0 +1,8 @@
+stderr: ''
+stdout: '.../domdf_python_tools/tests/test_pretty_print.py:868:5 Matches
+
+  .../domdf_python_tools/tests/test_pretty_print.py:870:6 Matches
+
+  2 matches in 1 files (searched 177 files).
+
+  '

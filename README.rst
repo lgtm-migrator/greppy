@@ -18,7 +18,7 @@ greppy
 	* - Docs
 	  - |docs| |docs_check|
 	* - Tests
-	  - |actions_linux| |actions_windows| |actions_macos|
+	  - |actions_linux| |actions_windows| |actions_macos| |coveralls|
 	* - Activity
 	  - |commits-latest| |commits-since| |maintained|
 	* - QA
@@ -57,6 +57,10 @@ greppy
 .. |requires| image:: https://requires.io/github/domdfcoding/greppy/requirements.svg?branch=master
 	:target: https://requires.io/github/domdfcoding/greppy/requirements/?branch=master
 	:alt: Requirements Status
+
+.. |coveralls| image:: https://img.shields.io/coveralls/github/domdfcoding/greppy/master?logo=coveralls
+	:target: https://coveralls.io/github/domdfcoding/greppy?branch=master
+	:alt: Coverage
 
 .. |codefactor| image:: https://img.shields.io/codefactor/grade/github/domdfcoding/greppy?logo=codefactor
 	:target: https://www.codefactor.io/repository/github/domdfcoding/greppy

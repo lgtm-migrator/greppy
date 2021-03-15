@@ -5,7 +5,7 @@
 greppy: Recursively grep over Python files in the files in the given directory.
 """
 #
-#  Copyright © 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
+#  Copyright © 2020-2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 #
 #  Permission is hereby granted, free of charge, to any person obtaining a copy
 #  of this software and associated documentation files (the "Software"), to deal
@@ -32,6 +32,7 @@ import sys
 # 3rd party
 import click
 from consolekit import click_command
+from consolekit.commands import MarkdownHelpCommand
 
 # this package
 from greppy import greppy
@@ -48,9 +49,9 @@ __all__ = ["main"]
 		default='.',
 		metavar="DIRECTORY",
 		)
-@click.option("-s", "--summary", is_flag=True, default=False, help="Show a summary of the results.")
+@click.option("-s", "--summary", is_flag=True, default=False, help="Show only a summary of the results.")
 @click.option("-i", "--ignore-case", is_flag=True, default=False, help="Ignore case.")
-@click_command()
+@click_command(cls=MarkdownHelpCommand)
 def main(
 		pattern,
 		dir: str = '.',  # noqa: A002  # pylint: disable=redefined-builtin
@@ -58,7 +59,7 @@ def main(
 		ignore_case: bool = False,
 		):
 	"""
-	Recursively grep over Python files in the files in the given directory, and search for PATTERN.
+	Recursively grep over Python files in the files in the given directory, and search for ``PATTERN``.
 	"""
 
 	# stdlib
@@ -69,7 +70,7 @@ def main(
 	if ignore_case:
 		flags |= re.IGNORECASE
 
-	greppy(re.compile(pattern, flags), dir, summary)
+	greppy(re.compile(pattern, flags), dir, summary=summary)
 
 
 if __name__ == "__main__":

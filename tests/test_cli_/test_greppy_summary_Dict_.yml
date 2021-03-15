@@ -1,0 +1,1204 @@
+stderr: ''
+stdout: ".../domdf_python_tools/domdf_python_tools/bases.py:39:2\n  37 from typing\
+  \ import (                                                       \n  38        \
+  \ Any,                                                               \n❱ 39    \
+  \     Dict,                                                              \n  40\
+  \         Iterable,                                                          \n\
+  \  41         Iterator,                                                        \
+  \  \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/bases.py:61:3\n  60 __all__ = [      \
+  \                                                          \n❱ 61         \"Dictable\"\
+  ,                                                        \n  62         \"NamedList\"\
+  ,                                                       \n  63         \"namedlist\"\
+  ,                                                       \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/bases.py:82:6\n  81 @prettify_docstrings\
+  \                                                       \n❱ 82 class Dictable(Iterable[Tuple[str,\
+  \ _V]]):                                  \n  83     \"\"\"                    \
+  \                                                \n  84     The basic structure\
+  \ of a class that can be converted into a dictionary.\n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/bases.py:104:27\n  102         yield from\
+  \ self.__dict__.items()                                  \n  103               \
+  \                                                            \n❱ 104     def __getstate__(self)\
+  \ -> Dict[str, _V]:                              \n  105         return self.__dict__\
+  \                                              \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/paths.py:62:2\n  60         Callable,\
+  \                                                          \n  61         ContextManager,\
+  \                                                    \n❱ 62         Dict,      \
+  \                                                        \n  63         Iterable,\
+  \                                                          \n  64         Iterator,\
+  \                                                          \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/paths.py:1038:14\n  1036     \"\"\"  \
+  \                                                                \n  1037      \
+  \                                                                    \n❱ 1038  \
+  \   directories: Dict[str, List[PathPlus]] = defaultdict(list)           \n  1039\
+  \     local_contents: List[PathPlus] = []                                  \n  1040\
+  \     files: List[PathPlus] = []                                           \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/dates.py:54:31\n  52 import sys      \
+  \                                                           \n  53 import typing\
+  \                                                              \n❱ 54 from collections\
+  \ import OrderedDict                                        \n  55 from types import\
+  \ ModuleType                                               \n  56 from typing import\
+  \ Optional, Union                                         \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/dates.py:143:21\n  142 if sys.version_info\
+  \ <= (3, 7, 2):  # pragma: no cover (py37+)             \n❱ 143     MonthsType =\
+  \ OrderedDict                                              \n  144 else:  # pragma:\
+  \ no cover (<py37)                                         \n  145     MonthsType\
+  \ = typing.OrderedDict[str, str]  # type: ignore  # noqa: TYP\n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/dates.py:145:28\n  143     MonthsType\
+  \ = OrderedDict                                              \n  144 else:  # pragma:\
+  \ no cover (<py37)                                         \n❱ 145     MonthsType\
+  \ = typing.OrderedDict[str, str]  # type: ignore  # noqa: TYP\n  146           \
+  \                                                                \n  147 #: Mapping\
+  \ of 3-character shortcodes to full month names.                 \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/dates.py:148:28\n  147 #: Mapping of 3-character\
+  \ shortcodes to full month names.                 \n❱ 148 months: MonthsType = OrderedDict(\
+  \                                         \n  149         Jan=\"January\",     \
+  \                                               \n  150         Feb=\"February\"\
+  ,                                                   \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/import_tools.py:53:34\n  51 import pkgutil\
+  \                                                             \n  52 from types\
+  \ import ModuleType                                               \n❱ 53 from typing\
+  \ import Any, Callable, Dict, Iterator, List, Optional, Type, ove\n  54        \
+  \                                                                    \n  55 # 3rd\
+  \ party                                                                \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/import_tools.py:56:44\n  55 # 3rd party\
+  \                                                                \n❱ 56 from typing_extensions\
+  \ import Literal, TypedDict                           \n  57                   \
+  \                                                         \n  58 # this package\
+  \                                                             \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/import_tools.py:71:31\n❱ 71 class _DiscoverKwargsType(TypedDict):\
+  \                                      \n  72     match_func: Optional[Callable[[Any],\
+  \ bool]]                            \n  73     exclude_side_effects: bool      \
+  \                                       \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/import_tools.py:199:7\n  197         name_match_func:\
+  \ Optional[Callable[[Any], bool]] = None,          \n  198         object_match_func:\
+  \ Optional[Callable[[Any], bool]] = None,        \n❱ 199         ) -> Dict[str,\
+  \ Any]:                                              \n  200     \"\"\"        \
+  \                                                           \n  201     Returns\
+  \ a mapping of entry point names to the entry points in the give\n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/versions.py:28:19\n  26 # stdlib     \
+  \                                                              \n  27 import re\
+  \                                                                  \n❱ 28 from typing\
+  \ import Dict, Generator, Iterable, Sequence, Tuple, Union       \n  29        \
+  \                                                                    \n  30 # 3rd\
+  \ party                                                                \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/versions.py:68:18\n  66     \"\"\"   \
+  \                                                                 \n  67       \
+  \                                                                     \n❱ 68   \
+  \  _field_defaults: Dict[str, int] = {\"major\": 0, \"minor\": 0, \"patch\": 0}\
+  \ \n  69     \"\"\"                                                            \
+  \        \n  70     Dictionary mapping field names to default values.          \
+  \            \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/versions.py:70:1\n  68     _field_defaults:\
+  \ Dict[str, int] = {\"major\": 0, \"minor\": 0, \"patch\": 0} \n  69     \"\"\"\
+  \                                                                    \n❱ 70    \
+  \ Dictionary mapping field names to default values.                      \n  71\
+  \                                                                            \n\
+  \  72     .. versionadded:: 1.4.0                                              \
+  \  \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/versions.py:240:22\n  238         return\
+  \ cls.from_str(str(version_float))                           \n  239           \
+  \                                                                \n❱ 240     def\
+  \ _asdict(self) -> Dict[str, int]:                                  \n  241    \
+  \     \"\"\"                                                               \n  242\
+  \         Return a new dict which maps field names to their corresponding va\n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/utils.py:72:49\n  70 from math import\
+  \ log10                                                     \n  71 from pprint import\
+  \ pformat                                                 \n❱ 72 from typing import\
+  \ TYPE_CHECKING, Any, Callable, Dict, Iterable, Iterator, \n  73               \
+  \                                                             \n  74 # this package\
+  \                                                             \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/utils.py:236:19\n  234         args: Iterable[Any],\
+  \                                              \n  235         posarg_names: Union[Iterable[str],\
+  \ Callable],                     \n❱ 236         kwargs: Optional[Dict[str, Any]]\
+  \ = None,                          \n  237         ) -> Dict[str, Any]:        \
+  \                                      \n  238     \"\"\"                      \
+  \                                             \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/utils.py:237:7\n  235         posarg_names:\
+  \ Union[Iterable[str], Callable],                     \n  236         kwargs: Optional[Dict[str,\
+  \ Any]] = None,                          \n❱ 237         ) -> Dict[str, Any]:  \
+  \                                            \n  238     \"\"\"                \
+  \                                                   \n  239     Convert the positional\
+  \ args in ``args`` to kwargs, based on the relati\n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/utils.py:251:10\n  249     :default kwargs:\
+  \ ``{}``                                               \n  250                 \
+  \                                                          \n❱ 251     :return:\
+  \ Dictionary mapping argument names to values.                 \n  252     \"\"\"\
+  \                                                                   \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/typing.py:45:49\n  43 from decimal import\
+  \ Decimal                                                \n  44 from json import\
+  \ JSONDecoder, JSONEncoder                                  \n❱ 45 from typing import\
+  \ TYPE_CHECKING, Any, Callable, Dict, List, Optional, Tupl\n  46               \
+  \                                                             \n  47 # 3rd party\
+  \                                                                \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/typing.py:163:35\n  161             *,\
+  \                                                            \n  162           \
+  \  cls: Optional[Type[JSONDecoder]] = ...,                       \n❱ 163       \
+  \      object_hook: Optional[Callable[[Dict[Any, Any]], Any]] = ..., \n  164   \
+  \          parse_float: Optional[Callable[[str], Any]] = ...,            \n  165\
+  \             parse_int: Optional[Callable[[str], Any]] = ...,              \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/words.py:44:24\n  42 from reprlib import\
+  \ recursive_repr                                         \n  43 from string import\
+  \ ascii_lowercase, ascii_uppercase                        \n❱ 44 from typing import\
+  \ Any, Dict, Iterable, List, Optional                     \n  45               \
+  \                                                             \n  46 # this package\
+  \                                                             \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/words.py:176:11\n❱ 176 class Font(Dict[str,\
+  \ str]):                                               \n  177     \"\"\"      \
+  \                                                             \n  178     Represents\
+  \ a Unicode pseudo-font.                                     \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/doctools.py:34:34\n  32 from inspect import\
+  \ cleandoc                                               \n  33 from types import\
+  \ MethodType                                               \n❱ 34 from typing import\
+  \ Any, Callable, Dict, Optional, Sequence, Type, TypeVar, \n  35               \
+  \                                                             \n  36 # this package\
+  \                                                             \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/doctools.py:314:56\n❱ 314 def _do_prettify(obj:\
+  \ Type, base: Type, new_docstrings: Dict[str, str]):  \n  315     \"\"\"       \
+  \                                                            \n  316     Perform\
+  \ the actual prettifying for :func`~.prettify_docstrings`.      \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/domdf_python_tools/doctools.py:379:16\n  377     for attribute\
+  \ in new_return_types:                                    \n  378         if hasattr(obj,\
+  \ attribute):                                       \n❱ 379             annotations:\
+  \ Dict = getattr(getattr(obj, attribute), \"__annota\n  380                    \
+  \                                                       \n  381             if \"\
+  return\" not in annotations or annotations[\"return\"] is Any\n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_doctools.py:18:37\n  16 # this package       \
+  \                                                      \n  17 from domdf_python_tools\
+  \ import doctools                                    \n❱ 18 from domdf_python_tools.bases\
+  \ import Dictable                              \n  19 from domdf_python_tools.compat\
+  \ import PYPY                                 \n  20 from domdf_python_tools.doctools\
+  \ import (                                  \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_doctools.py:505:9\n  503     assert prettify_docstrings(F).__getitem__.__doc__\
+  \ != \"Return ``self[ke\n  504                                                 \
+  \                          \n❱ 505     class G(Dictable):                      \
+  \                              \n  506         pass                            \
+  \                                  \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:496:24\n  495     def test_ordered_dict(self,\
+  \ file_regression: FileRegressionFixture):  \n❱ 496         d: collections.OrderedDict\
+  \ = collections.OrderedDict()            \n  497         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"OrderedDict()\"        \n  498         d = collections.OrderedDict([])  \
+  \                                 \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:497:53\n  495     def test_ordered_dict(self,\
+  \ file_regression: FileRegressionFixture):  \n  496         d: collections.OrderedDict\
+  \ = collections.OrderedDict()            \n❱ 497         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"OrderedDict()\"        \n  498         d = collections.OrderedDict([])  \
+  \                                 \n  499         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"OrderedDict()\"        \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:498:25\n  496         d: collections.OrderedDict\
+  \ = collections.OrderedDict()            \n  497         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"OrderedDict()\"        \n❱ 498         d = collections.OrderedDict([])  \
+  \                                 \n  499         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"OrderedDict()\"        \n  500         words = \"the quick brown fox jumped\
+  \ over a lazy dog\".split()      \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:499:53\n  497         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"OrderedDict()\"        \n  498         d = collections.OrderedDict([])  \
+  \                                 \n❱ 499         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"OrderedDict()\"        \n  500         words = \"the quick brown fox jumped\
+  \ over a lazy dog\".split()      \n  501         d = collections.OrderedDict(zip(words,\
+  \ itertools.count()))        \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:501:25\n  499         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"OrderedDict()\"        \n  500         words = \"the quick brown fox jumped\
+  \ over a lazy dog\".split()      \n❱ 501         d = collections.OrderedDict(zip(words,\
+  \ itertools.count()))        \n  502         check_file_regression(FancyPrinter().pformat(d),\
+  \ file_regression) \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:522:25\n  520               'dog':\
+  \ 8,                                                   \n  521               })\"\
+  \"\"                                                       \n❱ 522         d = collections.OrderedDict(zip(words,\
+  \ itertools.count()))        \n  523         m = types.MappingProxyType(d)     \
+  \                                \n  524         assert FancyPrinter().pformat(\
+  \                                    \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:527:20\n  525                \
+  \ m                                                         \n  526            \
+  \     ) == \"\"\"\\                                                 \n❱ 527 mappingproxy(OrderedDict([\
+  \                                                \n  528                       \
+  \    ('the', 0),                                     \n  529                   \
+  \        ('quick', 1),                                   \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:884:59\n  882         words =\
+  \ \"the quick brown fox jumped over a lazy dog\".split()      \n  883         items\
+  \ = list(zip(words, itertools.count()))                       \n❱ 884         d\
+  \ = collections.ChainMap(dict(items), collections.OrderedDict(item\n  885      \
+  \   check_file_regression(FancyPrinter().pformat(d), file_regression) \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:920:21\n  919     def test_user_dict(self,\
+  \ file_regression: FileRegressionFixture):     \n❱ 920         d: collections.UserDict\
+  \ = collections.UserDict()                  \n  921         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"{}\"                   \n  922         words = \"the quick brown fox jumped\
+  \ over a lazy dog\".split()      \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_pretty_print.py:923:22\n  921         assert FancyPrinter(width=1).pformat(d)\
+  \ == \"{}\"                   \n  922         words = \"the quick brown fox jumped\
+  \ over a lazy dog\".split()      \n❱ 923         d = collections.UserDict(zip(words,\
+  \ itertools.count()))  # type: i\n  924         check_file_regression(FancyPrinter().pformat(d),\
+  \ file_regression) \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_typing.py:12:19\n  10 import os              \
+  \                                                    \n  11 import pathlib     \
+  \                                                        \n❱ 12 from typing import\
+  \ Dict, List, Sequence, Set, Tuple, Union                 \n  13               \
+  \                                                             \n  14 # 3rd party\
+  \                                                                \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_typing.py:34:11\n  32                 (12.34,\
+  \ Tuple[int, float, str]),                           \n  33                 (\"\
+  abc\", Tuple[int, float, str]),                           \n❱ 34               \
+  \  (1234, Dict[int, float]),                                  \n  35           \
+  \      (12.34, Dict[int, float]),                                 \n  36       \
+  \          ],                                                         \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_typing.py:35:12\n  33                 (\"abc\"\
+  , Tuple[int, float, str]),                           \n  34                 (1234,\
+  \ Dict[int, float]),                                  \n❱ 35                 (12.34,\
+  \ Dict[int, float]),                                 \n  36                 ], \
+  \                                                        \n  37         )      \
+  \                                                            \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_typing.py:39:33\n  37         )              \
+  \                                                    \n  38 def test_check_membership_true(obj,\
+  \ type_):                                \n❱ 39     # todo: Positions for Tuple\
+  \ and Dict                                   \n  40     assert check_membership(obj,\
+  \ type_)                                    \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_typing.py:56:11\n  54                 (12.34,\
+  \ Tuple[int, bytes, str]),                           \n  55                 (\"\
+  abc\", Tuple[int, float, bytes]),                         \n❱ 56               \
+  \  (1234, Dict[bytes, float]),                                \n  57           \
+  \      (12.34, Dict[int, str]),                                   \n  58       \
+  \          ],                                                         \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_typing.py:57:12\n  55                 (\"abc\"\
+  , Tuple[int, float, bytes]),                         \n  56                 (1234,\
+  \ Dict[bytes, float]),                                \n❱ 57                 (12.34,\
+  \ Dict[int, str]),                                   \n  58                 ], \
+  \                                                        \n  59         )      \
+  \                                                            \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_typing.py:61:33\n  59         )              \
+  \                                                    \n  60 def test_check_membership_false(obj,\
+  \ type_):                               \n❱ 61     # todo: Positions for Tuple and\
+  \ Dict                                   \n  62     assert not check_membership(obj,\
+  \ type_)                                \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/mypy_test.py:2:24\n  0 # stdlib                   \
+  \                                                 \n  1 from typing import Any,\
+  \ Dict                                                \n❱ 2                    \
+  \                                                         \n  3 # this package \
+  \                                                             \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/mypy_test.py:5:37\n  4 # this package             \
+  \                                                 \n❱ 5 from domdf_python_tools.bases\
+  \ import Dictable                               \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/mypy_test.py:8:8\n❱  8 class MyDictable(Dictable):\
+  \                                                \n   9                        \
+  \                                                    \n  10     def __init__(self,\
+  \ foo: str, bar: int):                                \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/mypy_test.py:21:16\n❱ 21 def myfunc() -> Dict[str,\
+  \ Any]:                                            \n  22     a = MyDictable(\"\
+  foo\", 12)                                              \n  23     return dict(a)\
+  \                                                         \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/mypy_test.py:22:7\n  21 def myfunc() -> Dict[str, Any]:\
+  \                                            \n❱ 22     a = MyDictable(\"foo\",\
+  \ 12)                                              \n  23     return dict(a)   \
+  \                                                      \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_bases.py:19:37\n  18 # this package          \
+  \                                                   \n❱ 19 from domdf_python_tools.bases\
+  \ import Dictable, UserFloat                   \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_bases.py:22:13\n❱ 22 class Person(Dictable): \
+  \                                                   \n  23                     \
+  \                                                       \n  24     def __init__(self,\
+  \ name, age, occupation=None):                        \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/tests/test_bases.py:59:10\n❱ 59 class TestDictable:     \
+  \                                                   \n  60                     \
+  \                                                       \n  61     def test_creation(self,\
+  \ alice):                                        \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/doc-source/latex_toctree_sections.py:2:24\n  0 # stdlib \
+  \                                                                   \n  1 from typing\
+  \ import Any, Dict, List                                          \n❱ 2        \
+  \                                                                     \n  3 # 3rd\
+  \ party                                                                 \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/doc-source/latex_toctree_sections.py:69:26\n❱ 69 def setup(app:\
+  \ Sphinx) -> Dict[str, Any]:                                  \n  70     \"\"\"\
+  \                                                                    \n  71    \
+  \ Setup Sphinx extension.                                                \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/doc-source/patched_autosummary.py:3:24\n  1 # stdlib    \
+  \                                                                \n  2 import re\
+  \                                                                   \n❱ 3 from typing\
+  \ import Any, Dict, List, Tuple                                   \n  4        \
+  \                                                                     \n  5 # 3rd\
+  \ party                                                                 \n--------------------------------------------------------------------------------\n\
+  .../domdf_python_tools/doc-source/patched_autosummary.py:28:26\n❱ 28 def setup(app:\
+  \ Sphinx) -> Dict[str, Any]:                                  \n  29     app.setup_extension(\"\
+  sphinx.ext.autosummary\")                          \n  30     app.add_directive(\"\
+  autosummary\", PatchedAutosummary, override=True)    \n--------------------------------------------------------------------------------\n\
+  .../repo_helper_github/repo_helper_github/_types.py:27:19\n  26 # stdlib       \
+  \                                                            \n❱ 27 from typing\
+  \ import Dict, List                                              \n  28        \
+  \                                                                    \n  29 # 3rd\
+  \ party                                                                \n--------------------------------------------------------------------------------\n\
+  .../repo_helper_github/repo_helper_github/_types.py:30:35\n  29 # 3rd party    \
+  \                                                            \n❱ 30 from typing_extensions\
+  \ import TypedDict                                    \n--------------------------------------------------------------------------------\n\
+  .../repo_helper_github/repo_helper_github/_types.py:33:23\n❱ 33 class _EditKwargs(TypedDict,\
+  \ total=False):                                 \n  34     description: str    \
+  \                                                   \n  35     homepage: str   \
+  \                                                       \n--------------------------------------------------------------------------------\n\
+  .../repo_helper_github/repo_helper_github/__init__.py:32:29\n  30 import tempfile\
+  \                                                            \n  31 from getpass\
+  \ import getpass                                                \n❱ 32 from typing\
+  \ import Callable, Dict, Iterator, Optional, Tuple, Union        \n  33        \
+  \                                                                    \n  34 # 3rd\
+  \ party                                                                \n--------------------------------------------------------------------------------\n\
+  .../repo_helper_github/repo_helper_github/__init__.py:294:19\n  293            \
+  \ ret = 0                                                       \n❱ 294        \
+  \     target_secrets: Dict[str, Callable[[str], Tuple[bool, str]]] =\n  295    \
+  \                                                                       \n  296\
+  \             if self.templates.globals[\"enable_conda\"]:                    \n\
+  --------------------------------------------------------------------------------\n\
+  .../repo_helper_github/repo_helper_github/__init__.py:431:27\n  429         Returns\
+  \ the keyword arguments used when creating and updating repo\n  430            \
+  \                                                               \n❱ 431        \
+  \ :rtype: :class:`~.typing.Dict`\\[:class:`str`, :py:obj:`~.typing.Un\n  432   \
+  \      \"\"\"                                                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_config.py:7:29\n  5 # this package               \
+  \                                               \n  6 from sphinx_toolbox.config\
+  \ import InvalidOptionError, MissingOptionError, va\n❱ 7 from tests.common import\
+  \ AttrDict                                           \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_config.py:11:14\n  10 def test_validate_config():\
+  \                                                \n❱ 11     config = AttrDict({\
+  \                                                    \n  12             \"source_link_target\"\
+  : \"Sphinx\",                                \n  13             \"github_username\"\
+  : \"domdfcoding\",                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_config.py:31:14\n  29             }              \
+  \                                                \n  30                        \
+  \                                                    \n❱ 31     config = AttrDict({\
+  \                                                    \n  32             \"source_link_target\"\
+  : \"Sphinx\",                                \n  33             \"github_username\"\
+  : None,                                       \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_config.py:40:14\n  38         validate_config(None,\
+  \ config)  # type: ignore                      \n  39                          \
+  \                                                  \n❱ 40     config = AttrDict({\
+  \                                                    \n  41             \"source_link_target\"\
+  : \"Sphinx\",                                \n  42             \"github_username\"\
+  : \"domdfcoding\",                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_config.py:49:14\n  47         validate_config(None,\
+  \ config)  # type: ignore                      \n  48                          \
+  \                                                  \n❱ 49     config = AttrDict({\
+  \                                                    \n  50             \"source_link_target\"\
+  : \"bananas\",                               \n  51             \"github_username\"\
+  : \"domdfcoding\",                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_config.py:70:14\n  68         )                  \
+  \                                                \n  69 def test_source_link_target(target:\
+  \ str, expects: str):                    \n❱ 70     config = AttrDict({        \
+  \                                            \n  71             \"source_link_target\"\
+  : target,                                  \n  72             \"github_username\"\
+  : \"domdfcoding\",                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_installation.py:12:29\n  10 from sphinx_toolbox.installation\
+  \ import make_installation_instructions     \n  11 from sphinx_toolbox.testing import\
+  \ run_setup                               \n❱ 12 from tests.common import AttrDict\
+  \                                          \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_installation.py:15:31\n❱ 15 class FakeBuildEnvironment(AttrDict):\
+  \                                      \n  16                                  \
+  \                                          \n  17     def __init__(self, tab_width:\
+  \ int):                                    \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_installation.py:18:15\n  17     def __init__(self,\
+  \ tab_width: int):                                    \n❱ 18         config = AttrDict({\
+  \                                                \n  19                 \"docutils_tab_width\"\
+  : tab_width,                           \n  20                 \"github_username\"\
+  : \"octocat\",                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_installation.py:24:12\n  22                 \"conda_channels\"\
+  : [],                                      \n  23                 })           \
+  \                                              \n❱ 24         app = AttrDict(extensions=[\
+  \                                        \n  25                 \"sphinx_toolbox.installation\"\
+  ,                             \n  26                 \"sphinx_toolbox.github\",\
+  \                                   \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:12:29\n  10 from sphinx_toolbox.testing\
+  \ import run_setup                               \n  11 from sphinx_toolbox.utils\
+  \ import make_github_url                           \n❱ 12 from tests.common import\
+  \ AttrDict, error, error_codes, info, severe, warnin\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:18:15\n  17     def __init__(self, github_issues_url):\
+  \                                 \n❱ 18         config = AttrDict({\"github_pull_url\"\
+  : RequestsURL(github_issues_url\n  19         app = AttrDict({\"config\": config})\
+  \                                 \n  20         env = AttrDict({\"app\": app})\
+  \                                       \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:19:12\n  17     def __init__(self, github_issues_url):\
+  \                                 \n  18         config = AttrDict({\"github_pull_url\"\
+  : RequestsURL(github_issues_url\n❱ 19         app = AttrDict({\"config\": config})\
+  \                                 \n  20         env = AttrDict({\"app\": app})\
+  \                                       \n  21         settings = AttrDict({\"env\"\
+  : env})                                  \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:20:12\n  18         config = AttrDict({\"\
+  github_pull_url\": RequestsURL(github_issues_url\n  19         app = AttrDict({\"\
+  config\": config})                                 \n❱ 20         env = AttrDict({\"\
+  app\": app})                                       \n  21         settings = AttrDict({\"\
+  env\": env})                                  \n  22         reporter = AttrDict({\
+  \                                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:21:17\n  19         app = AttrDict({\"config\"\
+  : config})                                 \n  20         env = AttrDict({\"app\"\
+  : app})                                       \n❱ 21         settings = AttrDict({\"\
+  env\": env})                                  \n  22         reporter = AttrDict({\
+  \                                              \n  23                 \"info\":\
+  \ info,                                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:22:17\n  20         env = AttrDict({\"app\"\
+  : app})                                       \n  21         settings = AttrDict({\"\
+  env\": env})                                  \n❱ 22         reporter = AttrDict({\
+  \                                              \n  23                 \"info\":\
+  \ info,                                              \n  24                 \"warning\"\
+  : warning,                                        \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:28:22\n  26                 \"severe\":\
+  \ severe,                                          \n  27                 })   \
+  \                                                      \n❱ 28         self.document\
+  \ = AttrDict({\"settings\": settings, \"reporter\": reporte\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:34:15\n  33     def __init__(self, github_issues_url):\
+  \                                 \n❱ 34         config = AttrDict({\"github_issues_url\"\
+  : RequestsURL(github_issues_u\n  35         app = AttrDict({\"config\": config})\
+  \                                 \n  36         env = AttrDict({\"app\": app})\
+  \                                       \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:35:12\n  33     def __init__(self, github_issues_url):\
+  \                                 \n  34         config = AttrDict({\"github_issues_url\"\
+  : RequestsURL(github_issues_u\n❱ 35         app = AttrDict({\"config\": config})\
+  \                                 \n  36         env = AttrDict({\"app\": app})\
+  \                                       \n  37         settings = AttrDict({\"env\"\
+  : env})                                  \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:36:12\n  34         config = AttrDict({\"\
+  github_issues_url\": RequestsURL(github_issues_u\n  35         app = AttrDict({\"\
+  config\": config})                                 \n❱ 36         env = AttrDict({\"\
+  app\": app})                                       \n  37         settings = AttrDict({\"\
+  env\": env})                                  \n  38         reporter = AttrDict({\
+  \                                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:37:17\n  35         app = AttrDict({\"config\"\
+  : config})                                 \n  36         env = AttrDict({\"app\"\
+  : app})                                       \n❱ 37         settings = AttrDict({\"\
+  env\": env})                                  \n  38         reporter = AttrDict({\
+  \                                              \n  39                 \"info\":\
+  \ info,                                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:38:17\n  36         env = AttrDict({\"app\"\
+  : app})                                       \n  37         settings = AttrDict({\"\
+  env\": env})                                  \n❱ 38         reporter = AttrDict({\
+  \                                              \n  39                 \"info\":\
+  \ info,                                              \n  40                 \"warning\"\
+  : warning,                                        \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues.py:44:22\n  42                 \"severe\":\
+  \ severe,                                          \n  43                 })   \
+  \                                                      \n❱ 44         self.document\
+  \ = AttrDict({\"settings\": settings, \"reporter\": reporte\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/common.py:3:24\n  1 # stdlib                          \
+  \                                          \n  2 from http import HTTPStatus   \
+  \                                              \n❱ 3 from typing import Any, Dict,\
+  \ NamedTuple, Sequence                          \n  4                          \
+  \                                                   \n  5 # 3rd party          \
+  \                                                       \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/common.py:10:10\n❱ 10 class AttrDict(dict):           \
+  \                                           \n  11                             \
+  \                                               \n  12     def __getattr__(self,\
+  \ item):                                           \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/common.py:45:9\n  43 class AppParams(NamedTuple):     \
+  \                                          \n  44     args: Sequence[Any]      \
+  \                                              \n❱ 45     kwargs: Dict[str, Any]\
+  \                                                 \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source.py:10:29\n   8 from sphinx_toolbox.source import\
+  \ source_role                              \n   9 from sphinx_toolbox.testing import\
+  \ run_setup                               \n❱ 10 from tests.common import AttrDict,\
+  \ error, info, severe, warning            \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source.py:16:15\n  15     def __init__(self, source_link_target,\
+  \ github_source_url):             \n❱ 16         config = AttrDict({           \
+  \                                     \n  17                 \"source_link_target\"\
+  : source_link_target,                  \n  18                 \"github_source_url\"\
+  : RequestsURL(github_source_url),       \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source.py:20:12\n  18                 \"github_source_url\"\
+  : RequestsURL(github_source_url),       \n  19                 })              \
+  \                                           \n❱ 20         app = AttrDict({\"config\"\
+  : config})                                 \n  21         env = AttrDict({\"app\"\
+  : app, \"docname\": ''})                        \n  22         settings = AttrDict({\"\
+  env\": env})                                  \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source.py:21:12\n  19                 })         \
+  \                                                \n  20         app = AttrDict({\"\
+  config\": config})                                 \n❱ 21         env = AttrDict({\"\
+  app\": app, \"docname\": ''})                        \n  22         settings = AttrDict({\"\
+  env\": env})                                  \n  23         reporter = AttrDict({\
+  \                                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source.py:22:17\n  20         app = AttrDict({\"config\"\
+  : config})                                 \n  21         env = AttrDict({\"app\"\
+  : app, \"docname\": ''})                        \n❱ 22         settings = AttrDict({\"\
+  env\": env})                                  \n  23         reporter = AttrDict({\
+  \                                              \n  24                 \"info\":\
+  \ info,                                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source.py:23:17\n  21         env = AttrDict({\"app\"\
+  : app, \"docname\": ''})                        \n  22         settings = AttrDict({\"\
+  env\": env})                                  \n❱ 23         reporter = AttrDict({\
+  \                                              \n  24                 \"info\":\
+  \ info,                                              \n  25                 \"warning\"\
+  : warning,                                        \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source.py:29:22\n  27                 \"severe\":\
+  \ severe,                                          \n  28                 })   \
+  \                                                      \n❱ 29         self.document\
+  \ = AttrDict({\"settings\": settings, \"reporter\": reporte\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:30:24\n  29 # stdlib\
+  \                                                                   \n❱ 30 from\
+  \ typing import Any, Dict, Sequence, Tuple                              \n  31 \
+  \                                                                           \n \
+  \ 32 # 3rd party                                                               \
+  \ \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:56:15\n  54 def app_params(\
+  \                                                            \n  55         request:\
+  \ Any,                                                      \n❱ 56         test_params:\
+  \ Dict,                                                 \n  57         sphinx_test_tempdir:\
+  \ path,                                         \n  58         rootdir: path,  \
+  \                                                   \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:59:23\n  57     \
+  \    sphinx_test_tempdir: path,                                         \n  58 \
+  \        rootdir: path,                                                     \n❱\
+  \ 59         ) -> Tuple[Sequence, Dict]:                                       \
+  \ \n  60     \"\"\"                                                            \
+  \        \n  61     parameters that is specified by 'pytest.mark.sphinx' for   \
+  \            \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:69:9\n  67     markers\
+  \ = request.node.iter_markers(\"sphinx\")                          \n  68     pargs\
+  \ = {}                                                             \n❱ 69     kwargs:\
+  \ Dict[str, Any] = {}                                            \n  70        \
+  \                                                                    \n  71    \
+  \ if markers is not None:                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_github.py:10:29\n   8 from sphinx_toolbox.config import\
+  \ MissingOptionError                       \n   9 from sphinx_toolbox.testing import\
+  \ run_setup                               \n❱ 10 from tests.common import AttrDict\
+  \                                          \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_github.py:34:14\n  32 def test_missing_options():\
+  \                                                \n  33                        \
+  \                                                    \n❱ 34     config = AttrDict({\
+  \                                                    \n  35             \"github_username\"\
+  : \"octocat\",                                  \n  36             \"github_repository\"\
+  : None,                                     \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_github.py:42:14\n  40         github.validate_config('',\
+  \ config)  # type: ignore                 \n  41                               \
+  \                                             \n❱ 42     config = AttrDict({   \
+  \                                                 \n  43             \"github_username\"\
+  : None,                                       \n  44             \"github_repository\"\
+  : \"hello_world\",                            \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_testing.py:2:24\n  0 # stdlib                    \
+  \                                                \n  1 from typing import Any, Dict\
+  \                                                \n❱ 2                         \
+  \                                                    \n  3 # 3rd party         \
+  \                                                        \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_testing.py:45:28\n❱ 45 def __setup(app: Sphinx) ->\
+  \ Dict[str, Any]:                                \n  46     \"\"\"             \
+  \                                                       \n  47     Setup Sphinx\
+  \ Extension.                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues_output/conftest.py:30:24\n  29 # stdlib   \
+  \                                                                \n❱ 30 from typing\
+  \ import Any, Dict, Sequence, Tuple                              \n  31        \
+  \                                                                    \n  32 # 3rd\
+  \ party                                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues_output/conftest.py:56:15\n  54 def app_params(\
+  \                                                            \n  55         request:\
+  \ Any,                                                      \n❱ 56         test_params:\
+  \ Dict,                                                 \n  57         sphinx_test_tempdir:\
+  \ path,                                         \n  58         rootdir: path,  \
+  \                                                   \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues_output/conftest.py:59:23\n  57         sphinx_test_tempdir:\
+  \ path,                                         \n  58         rootdir: path,  \
+  \                                                   \n❱ 59         ) -> Tuple[Sequence,\
+  \ Dict]:                                        \n  60     \"\"\"              \
+  \                                                      \n  61     parameters that\
+  \ is specified by 'pytest.mark.sphinx' for               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_issues_output/conftest.py:69:9\n  67     markers =\
+  \ request.node.iter_markers(\"sphinx\")                          \n  68     pargs\
+  \ = {}                                                             \n❱ 69     kwargs:\
+  \ Dict[str, Any] = {}                                            \n  70        \
+  \                                                                    \n  71    \
+  \ if markers is not None:                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:30:24\n  29 # stdlib\
+  \                                                                   \n❱ 30 from\
+  \ typing import Any, Dict, Sequence, Tuple                              \n  31 \
+  \                                                                           \n \
+  \ 32 # 3rd party                                                               \
+  \ \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:56:15\n  54 def app_params(\
+  \                                                            \n  55         request:\
+  \ Any,                                                      \n❱ 56         test_params:\
+  \ Dict,                                                 \n  57         sphinx_test_tempdir:\
+  \ path,                                         \n  58         rootdir: path,  \
+  \                                                   \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:59:23\n  57     \
+  \    sphinx_test_tempdir: path,                                         \n  58 \
+  \        rootdir: path,                                                     \n❱\
+  \ 59         ) -> Tuple[Sequence, Dict]:                                       \
+  \ \n  60     \"\"\"                                                            \
+  \        \n  61     parameters that is specified by 'pytest.mark.sphinx' for   \
+  \            \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:69:9\n  67     markers\
+  \ = request.node.iter_markers(\"sphinx\")                          \n  68     pargs\
+  \ = {}                                                             \n❱ 69     kwargs:\
+  \ Dict[str, Any] = {}                                            \n  70        \
+  \                                                                    \n  71    \
+  \ if markers is not None:                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_variables.py:3:24\n  1 # stdlib          \
+  \                                                          \n  2 import sys    \
+  \                                                              \n❱ 3 from typing\
+  \ import Any, Dict, List, NamedTuple, Sequence, Type, Union, no_ty\n  4        \
+  \                                                                     \n  5 # 3rd\
+  \ party                                                                 \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_variables.py:34:14\n  33 class Analyzer(NamedTuple):\
+  \                                                \n❱ 34     annotations: Dict[Sequence[str],\
+  \ Any]                                  \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_rest_example.py:8:29\n   6 from sphinx_toolbox.rest_example\
+  \ import make_rest_example, rest_example_pur\n   7 from sphinx_toolbox.testing import\
+  \ run_setup                               \n❱  8 from tests.common import AttrDict\
+  \                                          \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_rest_example.py:11:31\n❱ 11 class FakeBuildEnvironment(AttrDict):\
+  \                                      \n  12                                  \
+  \                                          \n  13     def __init__(self, tab_width:\
+  \ int):                                    \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_rest_example.py:14:15\n  13     def __init__(self,\
+  \ tab_width: int):                                    \n❱ 14         config = AttrDict({\"\
+  docutils_tab_width\": tab_width})               \n  15         super().__init__({\"\
+  config\": config})                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_output/conftest.py:30:24\n  29 # stdlib          \
+  \                                                         \n❱ 30 from typing import\
+  \ Any, Dict, Sequence, Tuple                              \n  31               \
+  \                                                             \n  32 # 3rd party\
+  \                                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_output/conftest.py:56:15\n  54 def app_params(   \
+  \                                                         \n  55         request:\
+  \ Any,                                                      \n❱ 56         test_params:\
+  \ Dict,                                                 \n  57         sphinx_test_tempdir:\
+  \ path,                                         \n  58         rootdir: path,  \
+  \                                                   \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_output/conftest.py:59:23\n  57         sphinx_test_tempdir:\
+  \ path,                                         \n  58         rootdir: path,  \
+  \                                                   \n❱ 59         ) -> Tuple[Sequence,\
+  \ Dict]:                                        \n  60     \"\"\"              \
+  \                                                      \n  61     parameters that\
+  \ is specified by 'pytest.mark.sphinx' for               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_output/conftest.py:69:9\n  67     markers = request.node.iter_markers(\"\
+  sphinx\")                          \n  68     pargs = {}                       \
+  \                                      \n❱ 69     kwargs: Dict[str, Any] = {}  \
+  \                                          \n  70                              \
+  \                                              \n  71     if markers is not None:\
+  \                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:33:2\n  31         AnyStr,  \
+  \                                                          \n  32         Callable,\
+  \                                                          \n❱ 33         Dict,\
+  \                                                              \n  34         Generic,\
+  \                                                           \n  35         List,\
+  \                                                              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:106:5\n  104                \
+  \ (Mapping, \":py:class:`~typing.Mapping`\"),                 \n  105          \
+  \       (Mapping[str, bool], \":py:class:`~typing.Mapping`\\\\[:py:cl\n❱ 106   \
+  \              (Dict, \":py:class:`~typing.Dict`\"),                       \n  107\
+  \                 (Dict[str, bool], \":py:class:`~typing.Dict`\\\\[:py:class:`s\n\
+  \  108                 (Tuple, \":py:data:`~typing.Tuple`\"),                  \
+  \    \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:107:5\n  105                \
+  \ (Mapping[str, bool], \":py:class:`~typing.Mapping`\\\\[:py:cl\n  106         \
+  \        (Dict, \":py:class:`~typing.Dict`\"),                       \n❱ 107   \
+  \              (Dict[str, bool], \":py:class:`~typing.Dict`\\\\[:py:class:`s\n \
+  \ 108                 (Tuple, \":py:data:`~typing.Tuple`\"),                   \
+  \   \n  109                 (Tuple[str, bool], \":py:data:`~typing.Tuple`\\\\[:py:class:`\n\
+  --------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:186:6\n  184                \
+  \         ),                                                \n  185            \
+  \     (                                                         \n❱ 186        \
+  \                 Dict[T, int],                                     \n  187    \
+  \                     \":py:class:`~typing.Dict`\\\\[:py:data:`~T <tests.te\n  188\
+  \                         ),                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:187:26\n  185               \
+  \  (                                                         \n  186           \
+  \              Dict[T, int],                                     \n❱ 187       \
+  \                  \":py:class:`~typing.Dict`\\\\[:py:data:`~T <tests.te\n  188\
+  \                         ),                                                \n \
+  \ 189                 (                                                        \
+  \ \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:190:6\n  188                \
+  \         ),                                                \n  189            \
+  \     (                                                         \n❱ 190        \
+  \                 Dict[str, V],                                     \n  191    \
+  \                     \":py:class:`~typing.Dict`\\\\[:py:class:`str`, :py:d\n  192\
+  \                         ),                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:191:26\n  189               \
+  \  (                                                         \n  190           \
+  \              Dict[str, V],                                     \n❱ 191       \
+  \                  \":py:class:`~typing.Dict`\\\\[:py:class:`str`, :py:d\n  192\
+  \                         ),                                                \n \
+  \ 193                 (                                                        \
+  \ \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:194:6\n  192                \
+  \         ),                                                \n  193            \
+  \     (                                                         \n❱ 194        \
+  \                 Dict[T, U],                                       \n  195    \
+  \                     \":py:class:`~typing.Dict`\\\\[:py:data:`~T <tests.te\n  196\
+  \                         ),                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:195:26\n  193               \
+  \  (                                                         \n  194           \
+  \              Dict[T, U],                                       \n❱ 195       \
+  \                  \":py:class:`~typing.Dict`\\\\[:py:data:`~T <tests.te\n  196\
+  \                         ),                                                \n \
+  \ 197                 (                                                        \
+  \ \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/autotypeddict_demo.py:9:35\n   8 # 3rd party                \
+  \                                                \n❱  9 from typing_extensions import\
+  \ TypedDict                                    \n  10                          \
+  \                                                  \n  11 __all__ = [\"Movie\",\
+  \ \"Animal\", \"Cat\", \"Bird\"]                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/autotypeddict_demo.py:14:17\n❱ 14 class Movie(TypedDict):   \
+  \                                                 \n  15     \"\"\"            \
+  \                                                        \n  16     Represents a\
+  \ movie.                                                    \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/autotypeddict_demo.py:28:19\n❱ 28 class _Animal(TypedDict): \
+  \                                                 \n  29     \"\"\"            \
+  \                                                        \n  30     Keys required\
+  \ by all animals.                                          \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/pre_commit.py:109:35\n  107 from sphinx.application\
+  \ import Sphinx                                     \n  108 from sphinx.util.docutils\
+  \ import SphinxDirective                          \n❱ 109 from typing_extensions\
+  \ import TypedDict                                   \n  110                   \
+  \                                                        \n  111 # this package\
+  \                                                            \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/pre_commit.py:137:21\n❱ 137 class _BaseHook(TypedDict):\
+  \                                               \n  138     id: str  # noqa: A003\
+  \  # pylint: disable=redefined-builtin            \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/pre_commit.py:145:23\n❱ 145 class _BaseConfig(TypedDict):\
+  \                                             \n  146     repo: str            \
+  \                                                 \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/rest_example.py:77:24\n  76 # stdlib         \
+  \                                                          \n❱ 77 from typing import\
+  \ Any, Dict, List, Sequence                               \n  78               \
+  \                                                             \n  79 # 3rd party\
+  \                                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/rest_example.py:133:11\n  132 def make_rest_example(\
+  \                                                    \n❱ 133         options: Dict[str,\
+  \ Any],                                          \n  134         env: sphinx.environment.BuildEnvironment,\
+  \                         \n  135         content: Sequence[str],              \
+  \                             \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:157:34\n  155 import re      \
+  \                                                           \n  156 import warnings\
+  \                                                           \n❱ 157 from typing\
+  \ import Any, Callable, Dict, List, MutableMapping, Optional, Tu\n  158        \
+  \                                                                   \n  159 # 3rd\
+  \ party                                                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:194:64\n❱ 194 class Sources(List[Tuple[str,\
+  \ str, Callable, Callable, Optional[Dict[str, \n  195     \"\"\"               \
+  \                                                    \n  196     Class to store\
+  \ functions that provide installation instructions for di\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:220:27\n  218             source_name:\
+  \ str,                                             \n  219             validator:\
+  \ Callable = directives.unchanged,                   \n❱ 220             extra_options:\
+  \ Optional[Dict[str, Callable]] = None,          \n  221             ) -> Callable:\
+  \                                                \n  222         \"\"\"        \
+  \                                                       \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:230:13\n  229             def\
+  \ function(                                                 \n❱ 230            \
+  \     options: Dict[str, Any],  # Mapping of option names to val\n  231        \
+  \         env: sphinx.environment.BuildEnvironment,  # The Sphinx bu\n  232    \
+  \             ) -> List[str]: ...                                       \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:271:11\n  269 @sources.register(\"\
+  pypi\", \"PyPI\", flag, {\"pypi-name\": directives.unchanged\n  270 def pypi_installation(\
+  \                                                    \n❱ 271         options: Dict[str,\
+  \ Any],                                          \n  272         env: sphinx.environment.BuildEnvironment,\
+  \                         \n  273         ) -> List[str]:                      \
+  \                             \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:299:11\n  297         )      \
+  \                                                           \n  298 def conda_installation(\
+  \                                                   \n❱ 299         options: Dict[str,\
+  \ Any],                                          \n  300         env: sphinx.environment.BuildEnvironment,\
+  \                         \n  301         ) -> List[str]:                      \
+  \                             \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:350:11\n  348 @sources.register(\"\
+  github\", \"GitHub\", flag)                               \n  349 def github_installation(\
+  \                                                  \n❱ 350         options: Dict[str,\
+  \ Any],                                          \n  351         env: sphinx.environment.BuildEnvironment,\
+  \                         \n  352         ) -> List[str]:                      \
+  \                             \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:397:10\n  395             option_spec.update(source[4])\
+  \  # type: ignore                 \n  396                                      \
+  \                                     \n❱ 397     options: Dict[str, Any]      \
+  \                                         \n  398     \"\"\"                   \
+  \                                                \n  399     Mapping of option names\
+  \ to values.                                    \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:444:8\n  442             self.options[\"\
+  project_name\"] = self.arguments[0]              \n  443                       \
+  \                                                    \n❱ 444         tabs: Dict[str,\
+  \ List[str]] = _get_installation_instructions(self.o\n  445                    \
+  \                                                       \n  446         if not tabs:\
+  \                                                      \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:478:44\n❱ 478 def make_installation_instructions(options:\
+  \ Dict[str, Any], env: BuildEnvi\n  479     \"\"\"                             \
+  \                                      \n  480     Make the content of an installation\
+  \ node.                             \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:486:7\n  484     \"\"\"      \
+  \                                                             \n  485          \
+  \                                                                 \n❱ 486     tabs:\
+  \ Dict[str, List[str]] = _get_installation_instructions(options, e\n  487      \
+  \                                                                     \n  488  \
+  \   if not tabs:                                                          \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:506:44\n❱ 506 def _get_installation_instructions(options:\
+  \ Dict[str, Any], env: BuildEnvi\n  507     \"\"\"                             \
+  \                                      \n  508     Returns a mapping of tab/section\
+  \ names to their content.              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:514:7\n  512     \"\"\"      \
+  \                                                             \n  513          \
+  \                                                                 \n❱ 514     tabs:\
+  \ Dict[str, List[str]] = {}                                       \n  515      \
+  \                                                                     \n  516  \
+  \   for option_name, source_name, getter_function, validator_function, ext\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:65:34\n  63 import tempfile       \
+  \                                                     \n  64 from types import SimpleNamespace\
+  \                                          \n❱ 65 from typing import Any, Callable,\
+  \ Dict, List, NamedTuple, Optional, Set, Tu\n  66                              \
+  \                                              \n  67 # 3rd party              \
+  \                                                  \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:140:14\n  138     config: Config  #:\
+  \ Instance of :class:`sphinx.config.Config`          \n  139     events: EventManager\
+  \  #: Instance of :class:`sphinx.events.EventManage\n❱ 140     html_themes: Dict[str,\
+  \ str]  #: Mapping of HTML theme names to filesys\n  141                       \
+  \                                                    \n  142     # builder: Builder\
+  \  #: Instance of :class:`sphinx.builder.Builder`    \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:148:20\n  146         self.config =\
+  \ Config({}, {})                                      \n  147         self.events\
+  \ = EventManager(self)  # type: ignore                  \n❱ 148         self.html_themes:\
+  \ Dict[str, str] = {}                             \n  149         # self.builder\
+  \ = self.registry.create_builder(self, buildername)  \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:156:18\n  155         The registered\
+  \ values are stored in the ``app.registry.builders`` \n❱ 156         (:class:`typing.Dict`\\\
+  [:class:`str`\\, :class:`typing.Type`\\[:class\n  157         \"\"\"           \
+  \                                                    \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:172:18\n  171         The registered\
+  \ values are stored in the ``app.config.values`` dict\n❱ 172         (:class:`typing.Dict`\\\
+  [:class:`str`\\, :class:`typing.Tuple`]).    \n  173         \"\"\"            \
+  \                                                   \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:185:18\n  184         The registered\
+  \ values are stored in the ``app.events.events`` dict\n❱ 185         (:class:`typing.Dict`\\\
+  [:class:`str`\\, :class:`str`\\]).            \n  186         \"\"\"           \
+  \                                                    \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:200:18\n  199         The registered\
+  \ values are stored in the ``app.registry.translators\n❱ 200         (:class:`typing.Dict`\\\
+  [:class:`str`\\, :class:`typing.Type`\\[:class\n  201         \"\"\"           \
+  \                                                    \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:258:18\n  256         The registered\
+  \ values are stored in the ``roles`` dictionary retur\n  257         :func:`~sphinx_toolbox.testing.run_setup`.\
+  \                        \n❱ 258         (:class:`typing.Dict`\\[:class:`str`\\\
+  , :class:`typing.Callable`\\]).\n  259         \"\"\"                          \
+  \                                     \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:543:24\n  541     \"\"\"          \
+  \                                                         \n  542              \
+  \                                                             \n❱ 543     setup_ret:\
+  \ Union[None, Dict[str, Any], \"SphinxExtMetadata\"]  #: The ou\n  544     directives:\
+  \ Dict[str, Callable]  #: Mapping of directive names to dire\n  545     roles: Dict[str,\
+  \ Callable]  #: Mapping of role names to role functions\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:544:13\n  543     setup_ret: Union[None,\
+  \ Dict[str, Any], \"SphinxExtMetadata\"]  #: The ou\n❱ 544     directives: Dict[str,\
+  \ Callable]  #: Mapping of directive names to dire\n  545     roles: Dict[str, Callable]\
+  \  #: Mapping of role names to role functions\n  546     additional_nodes: Set[Type[Any]]\
+  \  #: Set of custom docutils nodes regi\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:545:8\n  543     setup_ret: Union[None,\
+  \ Dict[str, Any], \"SphinxExtMetadata\"]  #: The ou\n  544     directives: Dict[str,\
+  \ Callable]  #: Mapping of directive names to dire\n❱ 545     roles: Dict[str, Callable]\
+  \  #: Mapping of role names to role functions\n  546     additional_nodes: Set[Type[Any]]\
+  \  #: Set of custom docutils nodes regi\n  547     app: Sphinx  #: Instance of :class:`sphinx-toolbox.testing.Sphinx`.\
+  \   \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:550:68\n❱ 550 _sphinx_dict_setup =\
+  \ Callable[[sphinx.application.Sphinx], Optional[Dict[s\n  551 _sphinx_metadata_setup\
+  \ = Callable[[sphinx.application.Sphinx], Optional[\"S\n  552 _fake_dict_setup =\
+  \ Callable[[Sphinx], Optional[Dict[str, Any]]]           \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:552:47\n  550 _sphinx_dict_setup =\
+  \ Callable[[sphinx.application.Sphinx], Optional[Dict[s\n  551 _sphinx_metadata_setup\
+  \ = Callable[[sphinx.application.Sphinx], Optional[\"S\n❱ 552 _fake_dict_setup =\
+  \ Callable[[Sphinx], Optional[Dict[str, Any]]]           \n  553 _fake_metadata_setup\
+  \ = Callable[[Sphinx], Optional[\"SphinxExtMetadata\"]]  \n  554 _setup_func_type\
+  \ = Union[_sphinx_dict_setup, _sphinx_metadata_setup, _fake\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typevars.py:107:24\n  105 import\
+  \ sys                                                                \n  106 from\
+  \ types import ModuleType                                              \n❱ 107 from\
+  \ typing import Any, Dict, List, Optional, Tuple, Type, TypeVar, Union \n  108 \
+  \                                                                          \n  109\
+  \ # 3rd party                                                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typevars.py:303:11\n  301       \
+  \  obj: Any,                                                         \n  302   \
+  \      skip: bool,                                                       \n❱ 303\
+  \         options: Dict[str, Any],                                          \n \
+  \ 304         ) -> Optional[bool]:                                             \
+  \ \n  305     r\"\"\"                                                          \
+  \        \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autoprotocol.py:132:34\n  130 # stdlib\
+  \                                                                  \n  131 import\
+  \ sys                                                                \n❱ 132 from\
+  \ typing import Any, Callable, Dict, List, Tuple                       \n  133 \
+  \                                                                          \n  134\
+  \ # 3rd party                                                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autoprotocol.py:200:14\n  198   \
+  \  directivetype = \"protocol\"                                            \n  199\
+  \     priority = 20                                                         \n❱\
+  \ 200     option_spec: Dict[str, Callable] = {                                 \
+  \ \n  201             \"noindex\": flag,                                       \
+  \       \n  202             \"member-order\": member_order_option,             \
+  \             \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autonamedtuple.py:119:24\n  117 import\
+  \ textwrap                                                           \n  118 from\
+  \ textwrap import dedent                                               \n❱ 119 from\
+  \ typing import Any, Dict, List, Tuple, Type, get_type_hints           \n  120 \
+  \                                                                          \n  121\
+  \ # 3rd party                                                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autonamedtuple.py:205:35\n  203 \
+  \            self.add_line(line, sourcename)                               \n  204\
+  \                                                                           \n❱\
+  \ 205     def _get_docstring(self) -> Tuple[Dict[str, Param], List[str], List[st\n\
+  \  206         \"\"\"                                                          \
+  \     \n  207         Returns params, pre_output, post_output.                 \
+  \         \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autonamedtuple.py:300:21\n  299 \
+  \        # Mapping of member names to docstrings (as list of strings)      \n❱ 300\
+  \         member_docstrings: Dict[str, List[str]]                           \n \
+  \ 301                                                                          \
+  \ \n  302         try:                                                         \
+  \     \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/overloads.py:79:39\n  77 # stdlib\
+  \                                                                   \n  78 from\
+  \ inspect import Parameter, Signature                                   \n❱ 79 from\
+  \ typing import TYPE_CHECKING, Any, Dict, List                          \n  80 \
+  \                                                                           \n \
+  \ 81 # 3rd party                                                               \
+  \ \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/overloads.py:217:14\n  215      \
+  \               name: str,                                            \n  216  \
+  \                   obj: Any,                                             \n❱ 217\
+  \                     options: Dict[str, Any],                              \n \
+  \ 218                     lines: List[str],                                    \
+  \ \n  219                     ) -> None:                                       \
+  \     \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typehints.py:44:32\n  42   .. code-block::\
+  \ python                                                   \n  43              \
+  \                                                              \n❱ 44       def\
+  \ setup(app: Sphinx) -> Dict[str, Any]:                            \n  45      \
+  \     from sphinx_toolbox.more_autodoc.typehints import docstring_hooks\n  46  \
+  \         docstring_hooks.append((my_hook, 75))                            \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typehints.py:119:42\n  117 import\
+  \ types                                                              \n  118 from\
+  \ types import FunctionType, ModuleType                                \n❱ 119 from\
+  \ typing import Any, AnyStr, Callable, Dict, List, Optional, Tuple, Typ\n  120 \
+  \                                                                          \n  121\
+  \ if sys.version_info < (3, 7, 4):                                          \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typehints.py:596:11\n  594      \
+  \   name: str,                                                        \n  595  \
+  \       obj: Any,                                                         \n❱ 596\
+  \         options: Dict[str, Any],                                          \n \
+  \ 597         lines: List[str],                                                \
+  \ \n  598         ) -> None:                                                   \
+  \     \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/augment_defaults.py:69:19\n  68 #\
+  \ stdlib                                                                   \n❱ 69\
+  \ from typing import Dict, List, Type                                        \n\
+  \  70                                                                          \
+  \  \n  71 # 3rd party                                                          \
+  \      \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/augment_defaults.py:89:11\n  87 \
+  \        documenter: Type[Documenter],                                      \n \
+  \ 88         config: Config,                                                   \
+  \ \n❱ 89         options: Dict,                                                \
+  \     \n  90         ) -> Options:                                             \
+  \         \n  91     \"\"\"                                                    \
+  \                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:5:48\n  3 #  autotypeddict.py\
+  \                                                         \n  4 r\"\"\"        \
+  \                                                                \n❱ 5 A Sphinx\
+  \ directive for documenting :class:`TypedDicts <typing.TypedDict>` in\n  6     \
+  \                                                                        \n  7 Only\
+  \ supports :mod:`typing_extensions`\\'s TypedDict until :pull:`700 <python\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:7:47\n  5 A Sphinx\
+  \ directive for documenting :class:`TypedDicts <typing.TypedDict>` in\n  6     \
+  \                                                                        \n❱ 7 Only\
+  \ supports :mod:`typing_extensions`\\'s TypedDict until :pull:`700 <python\n  8\
+  \                                                                             \n\
+  \  9 .. extensions:: sphinx_toolbox.more_autodoc.autotypeddict                 \
+  \  \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:22:59\n  20 .. rst:directive::\
+  \ autotypeddict                                           \n  21               \
+  \                                                             \n❱ 22     Directive\
+  \ to automatically document a :class:`typing.TypedDict`.       \n  23          \
+  \                                                                  \n  24     The\
+  \ output is based on the :rst:dir:`autoclass` directive, but with a f\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:45:53\n  43    \
+  \     :type: flag                                                        \n  44\
+  \                                                                            \n\
+  ❱ 45         Inserts a list of base classes just below the TypedDict's signature\n\
+  \  46                                                                          \
+  \  \n  47     See https://www.sphinx-doc.org/en/master/usage/extensions/autodoc.html\
+  \ \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:130:34\n  129 #\
+  \ stdlib                                                                  \n❱ 130\
+  \ from typing import Any, Callable, Dict, List, Tuple, Type, get_type_hints \n \
+  \ 131                                                                          \
+  \ \n  132 # 3rd party                                                          \
+  \     \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:151:17\n  149  \
+  \       )                                                                 \n  150\
+  \                                                                           \n❱\
+  \ 151 __all__ = [\"TypedDictDocumenter\", \"setup\"]                           \
+  \     \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:154:11\n❱ 154 class\
+  \ TypedDictDocumenter(ClassDocumenter):                               \n  155  \
+  \   r\"\"\"                                                                  \n\
+  \  156     Sphinx autodoc :class:`~sphinx.ext.autodoc.Documenter`              \
+  \  \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:157:37\n  155  \
+  \   r\"\"\"                                                                  \n\
+  \  156     Sphinx autodoc :class:`~sphinx.ext.autodoc.Documenter`              \
+  \  \n❱ 157     for documenting :class:`typing.TypedDict`\\s.                   \
+  \       \n  158                                                                \
+  \           \n  159     .. versionadded:: 0.5.0                                \
+  \               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:165:14\n  163  \
+  \   directivetype = \"typeddict\"                                           \n \
+  \ 164     priority = 20                                                        \
+  \ \n❱ 165     option_spec: Dict[str, Callable] = {                             \
+  \     \n  166             \"noindex\": flag,                                   \
+  \           \n  167             \"alphabetical\": flag,                        \
+  \                 \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:211:8\n  209   \
+  \  def format_signature(self, **kwargs: Any) -> str:                     \n  210\
+  \         \"\"\"                                                               \n\
+  ❱ 211         Typed Dicts do not have a signature.                             \
+  \ \n  212         \"\"\"                                                       \
+  \        \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:228:38\n  226  \
+  \       if not getdoc(self.object):                                       \n  227\
+  \             sourcename = self.get_sourcename()                            \n❱\
+  \ 228             self.add_line(\":class:`typing.TypedDict`.\", sourcename)    \
+  \   \n  229             self.add_line('', sourcename)                          \
+  \       \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:246:16\n  244  \
+  \           ) -> List[Tuple[Documenter, bool]]:                           \n  245\
+  \         \"\"\"                                                               \n\
+  ❱ 246         Sort the TypedDict's members.                                    \
+  \ \n  247                                                                      \
+  \     \n  248         :param documenters:                                      \
+  \         \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:289:49\n  287  \
+  \       return []                                                         \n  288\
+  \                                                                           \n❱\
+  \ 289     def document_keys(self, keys: List[str], types: Dict[str, Type], docst\n\
+  \  290         \"\"\"                                                          \
+  \     \n  291         Document keys in a :class:`typing.TypedDict`.            \
+  \         \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:291:41\n  289  \
+  \   def document_keys(self, keys: List[str], types: Dict[str, Type], docst\n  290\
+  \         \"\"\"                                                               \n\
+  ❱ 291         Document keys in a :class:`typing.TypedDict`.                    \
+  \ \n  292                                                                      \
+  \     \n  293         :param keys: List of key names to document.              \
+  \         \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:381:30\n  379  \
+  \   app.add_role_to_domain(\"py\", \"typeddict\", PyXRefRole())               \n\
+  \  380                                                                         \
+  \  \n❱ 381     allow_subclass_add(app, TypedDictDocumenter)                    \
+  \      \n  382                                                                 \
+  \          \n  383     return {\"parallel_read_safe\": True}                   \
+  \                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/assets.py:95:19\n  93 import posixpath       \
+  \                                                    \n  94 import shutil      \
+  \                                                        \n❱ 95 from typing import\
+  \ Dict, List, Sequence, Tuple                             \n  96               \
+  \                                                             \n  97 # 3rd party\
+  \                                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/assets.py:132:11\n  130         lineno: int, \
+  \                                                     \n  131         inliner: Inliner,\
+  \                                                 \n❱ 132         options: Dict\
+  \ = {},                                               \n  133         content: List[str]\
+  \ = []                                           \n  134         ) -> Tuple[Sequence[AssetNode],\
+  \ List[system_message]]:            \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/github.py:34:27\n  32 .. code-block::        \
+  \                                                    \n  33                    \
+  \                                                        \n❱ 34     def setup(app:\
+  \ Sphinx) -> Dict[str, Any]:                              \n  35         app.setup_extension('sphinx_toolbox.github')\
+  \                       \n  36         return {}                               \
+  \                           \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:37:34\n  35 import functools        \
+  \                                                   \n  36 import re           \
+  \                                                       \n❱ 37 from typing import\
+  \ Any, Callable, Dict, Iterable, List, Mapping, Optional, \n  38               \
+  \                                                             \n  39 # 3rd party\
+  \                                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:50:35\n  48 from sphinx.locale import\
+  \ __                                               \n  49 from sphinx.pycode import\
+  \ ModuleAnalyzer                                   \n❱ 50 from typing_extensions\
+  \ import TypedDict                                    \n  51                   \
+  \                                                         \n  52 __all__ = [   \
+  \                                                             \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:274:29\n❱ 274 class SphinxExtMetadata(TypedDict,\
+  \ total=False):                          \n  275     \"\"\"                    \
+  \                                               \n  276     :class:`typing.TypedDict`\
+  \ representing the metadata dictionary returne\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:276:21\n  274 class SphinxExtMetadata(TypedDict,\
+  \ total=False):                          \n  275     \"\"\"                    \
+  \                                               \n❱ 276     :class:`typing.TypedDict`\
+  \ representing the metadata dictionary returne\n  277     Sphinx extensions' ``setup``\
+  \ functions.                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:445:17\n❱ 445 class Param(TypedDict):\
+  \                                                   \n  446     \"\"\"         \
+  \                                                          \n  447     :class:`~typing.TypedDict`\
+  \ to represent a parameter parsed from a clas\n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:447:22\n  445 class Param(TypedDict):\
+  \                                                   \n  446     \"\"\"         \
+  \                                                          \n❱ 447     :class:`~typing.TypedDict`\
+  \ to represent a parameter parsed from a clas\n  448                           \
+  \                                                \n  449     .. versionadded:: 0.8.0\
+  \                                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:492:67\n❱ 492 def parse_parameters(lines:\
+  \ List[str], tab_size: int = 8) -> Tuple[Dict[st\n  493     \"\"\"             \
+  \                                                      \n  494     Parse parameters\
+  \ from the docstring of a class/function.              \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:507:9\n  505     a_tab = ' ' * tab_size\
+  \                                                \n  506                       \
+  \                                                    \n❱ 507     params: Dict[str,\
+  \ Param] = {}                                         \n  508     last_arg: Optional[str]\
+  \ = None                                        \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/wikipedia.py:78:19\n  76 # stdlib            \
+  \                                                       \n  77 import re       \
+  \                                                           \n❱ 78 from typing import\
+  \ Dict, List, Tuple                                       \n  79 from urllib.parse\
+  \ import quote                                             \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/wikipedia.py:103:11\n  101         lineno: int,\
+  \                                                      \n  102         inliner:\
+  \ Inliner,                                                 \n❱ 103         options:\
+  \ Dict = {},                                               \n  104         content:\
+  \ List[str] = []                                           \n  105         ) ->\
+  \ Tuple[List[nodes.reference], List[system_message]]:          \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/issues.py:100:19\n   98 # stdlib             \
+  \                                                     \n   99 import warnings  \
+  \                                                         \n❱ 100 from typing import\
+  \ Dict, List, Optional, Tuple, Union                     \n  101               \
+  \                                                            \n  102 # 3rd party\
+  \                                                               \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/issues.py:170:11\n  168         lineno: int, \
+  \                                                     \n  169         inliner: Inliner,\
+  \                                                 \n❱ 170         options: Dict\
+  \ = {},                                               \n  171         content: List[str]\
+  \ = []                                           \n  172         ) -> Tuple[List[IssueNode],\
+  \ List[system_message]]:                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/issues.py:218:11\n  216         lineno: int, \
+  \                                                     \n  217         inliner: Inliner,\
+  \                                                 \n❱ 218         options: Dict\
+  \ = {},                                               \n  219         content: List[str]\
+  \ = []                                           \n  220         ) -> Tuple[List[IssueNode],\
+  \ List[system_message]]:                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/tweaks/latex_toc.py:38:24\n  37 # stdlib     \
+  \                                                              \n❱ 38 from typing\
+  \ import Any, Dict, List                                         \n  39        \
+  \                                                                    \n  40 # 3rd\
+  \ party                                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/tweaks/param_dash.py:78:19\n  77 # stdlib    \
+  \                                                               \n❱ 78 from typing\
+  \ import Dict, List, Tuple                                       \n  79        \
+  \                                                                    \n  80 # 3rd\
+  \ party                                                                \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/tweaks/param_dash.py:95:9\n  93 def make_field(\
+  \  # noqa D102                                               \n  94         self,\
+  \                                                              \n❱ 95         types:\
+  \ Dict[str, List[nodes.Node]],                                \n  96         domain:\
+  \ str,                                                       \n  97         items:\
+  \ Tuple,                                                      \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/tweaks/tabsize.py:18:27\n  16 .. code-block::\
+  \                                                            \n  17            \
+  \                                                                \n❱ 18     def\
+  \ setup(app: Sphinx) -> Dict[str, Any]:                              \n  19    \
+  \     app.setup_extension('sphinx_toolbox.github')                       \n  20\
+  \         return {}                                                          \n\
+  --------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/source.py:76:19\n  75 # stdlib               \
+  \                                                    \n❱ 76 from typing import Dict,\
+  \ List, Sequence, Tuple, Union                      \n  77                     \
+  \                                                       \n  78 # 3rd party     \
+  \                                                           \n--------------------------------------------------------------------------------\n\
+  .../sphinx-toolbox/sphinx_toolbox/source.py:100:11\n   98         lineno: int, \
+  \                                                     \n   99         inliner: Inliner,\
+  \                                                 \n❱ 100         options: Dict\
+  \ = {},                                               \n  101         content: List[str]\
+  \ = []                                           \n  102         ) -> Tuple[Sequence[Union[nodes.reference,\
+  \ addnodes.only]], List[s\n--------------------------------------------------------------------------------\n\
+  219 matches in 53 files (searched 177 files).\n"

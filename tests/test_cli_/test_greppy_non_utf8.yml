@@ -1,0 +1,7 @@
+stderr: 'Error reading .../my_package/__init__.py: ''utf-8'' codec can''t decode byte
+  0x84 in position 2: invalid start byte
+
+  '
+stdout: 'No matches across 1 files.
+
+  '

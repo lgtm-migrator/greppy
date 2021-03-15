@@ -5,7 +5,7 @@
 greppy: Recursively grep over Python files in the files in the given directory.
 """
 #
-#  Copyright © 2020 Dominic Davis-Foster <dominic@davis-foster.co.uk>
+#  Copyright © 2020-2021 Dominic Davis-Foster <dominic@davis-foster.co.uk>
 #
 #  Permission is hereby granted, free of charge, to any person obtaining a copy
 #  of this software and associated documentation files (the "Software"), to deal
@@ -35,6 +35,7 @@ from typing import IO, Pattern, Set, Union
 import click
 from domdf_python_tools.paths import PathPlus
 from domdf_python_tools.typing import PathLike
+from domdf_python_tools.words import Plural
 from rich.console import Console
 from rich.syntax import Syntax
 
@@ -46,10 +47,13 @@ __email__: str = "dominic@davis-foster.co.uk"
 
 __all__ = ["greppy"]
 
+_match = Plural("match", "matches")
+
 
 def greppy(
 		pattern: Union[Pattern, str],
-		dir: PathLike = '.',  # noqa: A002  # pylint: disable=redefined-builtin
+		search_dir: PathLike = '.',
+		*,
 		summary: bool = False,
 		file: IO = None,
 		) -> Set[PathPlus]:
@@ -57,8 +61,8 @@ def greppy(
 	Recursively grep over Python files in the files in the given directory, and search for ``pattern``.
 
 	:param pattern: The pattern to search for.
-	:param dir: The directory to search in.
-	:param summary: Show a summary of the results.
+	:param search_dir: The directory to search in.
+	:param summary: Show only a summary of the results.
 	:param file: The output file descriptor. Defaults to ``sys.stdout``.
 	:no-default file:
 	"""
@@ -73,11 +77,11 @@ def greppy(
 	match_count = 0
 	searched_files = 0
 
-	for filename in PathPlus(dir).iterchildren(match="**/*.py"):
+	for filename in PathPlus(search_dir).iterchildren(match="**/*.py"):
 
-		if filename.suffix != ".py":
+		if filename.suffix != ".py":  # pragma: no cover
 			continue
-		if "build/lib" in filename.as_posix() or "build/repo_helper_build" in filename.as_posix():
+		if "build" in filename.parts:
 			continue
 
 		searched_files += 1
@@ -85,7 +89,7 @@ def greppy(
 		try:
 			lines = filename.read_lines()
 		except UnicodeDecodeError as e:
-			click.echo(f"Error reading {filename}: {e}", err=True)
+			click.echo(f"Error reading {filename.as_posix()}: {e}", err=True)
 			continue
 
 		for lineno, content in enumerate(lines):
@@ -94,12 +98,12 @@ def greppy(
 				matching_files.add(filename)
 
 				if summary:
-					echo(f"{filename}:{lineno}:{match.span()[0]} Matches")
+					echo(f"{filename.as_posix()}:{lineno}:{match.span()[0]} Matches")
 				else:
-					echo(f"{filename}:{lineno}:{match.span()[0]}")
+					echo(f"{filename.as_posix()}:{lineno}:{match.span()[0]}")
 
 					context = lines[max(0, lineno - 3):lineno + 2]
-					start_line = lineno - 2
+					start_line = max(lineno - 2, 0)
 
 					while not context[0]:
 						context.pop(0)
@@ -119,7 +123,10 @@ def greppy(
 				break
 
 	if match_count:
-		echo(f"{match_count} matches in {len(matching_files)} files (searched {searched_files} files).")
+		echo(
+				f"{match_count} {_match(match_count)} in {len(matching_files)} "
+				f"files (searched {searched_files} files)."
+				)
 	else:
 		echo(f"No matches across {searched_files} files.")
 
