@@ -1,5 +1,36 @@
 [build-system]
-requires = [ "setuptools>=40.6.0", "wheel>=0.34.2",]
-build-backend = "setuptools.build_meta"
+requires = [ "whey",]
+build-backend = "whey"
+
+[project]
+name = "greppy"
+version = "0.0.0"
+description = "Recursively grep over Python files in the files in the given directory."
+readme = "README.rst"
+keywords = []
+dynamic = [ "requires-python", "classifiers", "dependencies",]
+[[project.authors]]
+email = "dominic@davis-foster.co.uk"
+name = "Dominic Davis-Foster"
+
+[project.license]
+file = "LICENSE"
+
+[project.urls]
+Homepage = "https://github.com/domdfcoding/greppy"
+"Issue Tracker" = "https://github.com/domdfcoding/greppy/issues"
+"Source Code" = "https://github.com/domdfcoding/greppy"
+Documentation = "https://greppy.readthedocs.io/en/latest"
+
+[project.scripts]
+greppy = "greppy.__main__:main"
 
 [tool.importcheck]
+always = [ "greppy", "greppy.__main__",]
+
+[tool.whey]
+base-classifiers = [ "Typing :: Typed",]
+python-versions = [ "3.6", "3.7", "3.8", "3.9",]
+python-implementations = [ "CPython", "PyPy",]
+platforms = [ "Windows", "macOS", "Linux",]
+license-key = "MIT"
