@@ -54,6 +54,13 @@ jobs:
           name: "coverage-${{ matrix.config.python-version }}"
           path: .coverage
 
+      - name: "Upload Test Tmpdir 🚀"
+        uses: actions/upload-artifact@v2
+        if: ${{ failure() }}
+        with:
+          name: "test_tmpdir"
+          path: "/tmp/pytest-of-runner/pytest-0/"
+
 
   Coverage:
     needs: tests
