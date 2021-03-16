@@ -3,8 +3,8 @@ from subprocess import PIPE, Popen
 
 # 3rd party
 import pytest
-from domdf_python_tools.paths import TemporaryPathPlus, in_directory
-from git import Repo
+from domdf_python_tools.paths import PathPlus, TemporaryPathPlus, in_directory, sort_paths
+from git import Repo  # type: ignore
 
 pytest_plugins = ("coincidence", )
 
@@ -33,3 +33,14 @@ def cloned_repos():
 		repo.git.checkout("db0e713882b7d8191e00ce6ed4eeaec47de2773f")
 
 		yield tmp_pathplus
+
+
+@pytest.fixture()
+def fixed_sort_order(monkeypatch):
+
+	original_iterchildren = PathPlus.iterchildren
+
+	def iterchildren(self, *args, **kwargs):
+		return sort_paths(*original_iterchildren(self, *args, **kwargs))
+
+	monkeypatch.setattr(PathPlus, "iterchildren", iterchildren)

@@ -11,6 +11,7 @@ def test_greppy_simple(
 		tmp_pathplus: PathPlus,
 		advanced_data_regression: AdvancedDataRegressionFixture,
 		capsys,
+		fixed_sort_order,
 		):
 	(tmp_pathplus / "my_package").mkdir()
 	(tmp_pathplus / "my_package" / "__init__.py").write_lines(["def foo(path: PathPlus, name: str) -> int: ..."])
@@ -31,6 +32,7 @@ def test_greppy_non_utf8(
 		tmp_pathplus: PathPlus,
 		advanced_data_regression: AdvancedDataRegressionFixture,
 		capsys,
+		fixed_sort_order,
 		):
 	(tmp_pathplus / "my_package").mkdir()
 	(tmp_pathplus / "my_package" / "__init__.py").write_lines(
@@ -58,6 +60,7 @@ def test_greppy(
 		advanced_data_regression: AdvancedDataRegressionFixture,
 		capsys,
 		search_term: str,
+		fixed_sort_order,
 		):
 
 	data = {}
@@ -76,6 +79,7 @@ def test_greppy_summary(
 		advanced_data_regression: AdvancedDataRegressionFixture,
 		capsys,
 		search_term: str,
+		fixed_sort_order,
 		):
 
 	data = {}

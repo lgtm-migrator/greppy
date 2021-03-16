@@ -1,15 +1,19 @@
 stderr: ''
-stdout: '.../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
+stdout: '.../domdf_python_tools/doc-source/latex_toctree_sections.py:2:24 Matches
+
+  .../domdf_python_tools/doc-source/latex_toctree_sections.py:69:26 Matches
+
+  .../domdf_python_tools/doc-source/patched_autosummary.py:3:24 Matches
+
+  .../domdf_python_tools/doc-source/patched_autosummary.py:28:26 Matches
+
+  .../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
 
   .../domdf_python_tools/domdf_python_tools/bases.py:61:3 Matches
 
   .../domdf_python_tools/domdf_python_tools/bases.py:82:6 Matches
 
   .../domdf_python_tools/domdf_python_tools/bases.py:104:27 Matches
-
-  .../domdf_python_tools/domdf_python_tools/paths.py:62:2 Matches
-
-  .../domdf_python_tools/domdf_python_tools/paths.py:1038:14 Matches
 
   .../domdf_python_tools/domdf_python_tools/dates.py:54:31 Matches
 
@@ -19,6 +23,12 @@ stdout: '.../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
 
   .../domdf_python_tools/domdf_python_tools/dates.py:148:28 Matches
 
+  .../domdf_python_tools/domdf_python_tools/doctools.py:34:34 Matches
+
+  .../domdf_python_tools/domdf_python_tools/doctools.py:314:56 Matches
+
+  .../domdf_python_tools/domdf_python_tools/doctools.py:379:16 Matches
+
   .../domdf_python_tools/domdf_python_tools/import_tools.py:53:34 Matches
 
   .../domdf_python_tools/domdf_python_tools/import_tools.py:56:44 Matches
@@ -27,13 +37,13 @@ stdout: '.../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
 
   .../domdf_python_tools/domdf_python_tools/import_tools.py:199:7 Matches
 
-  .../domdf_python_tools/domdf_python_tools/versions.py:28:19 Matches
+  .../domdf_python_tools/domdf_python_tools/paths.py:62:2 Matches
 
-  .../domdf_python_tools/domdf_python_tools/versions.py:68:18 Matches
+  .../domdf_python_tools/domdf_python_tools/paths.py:1038:14 Matches
 
-  .../domdf_python_tools/domdf_python_tools/versions.py:70:1 Matches
+  .../domdf_python_tools/domdf_python_tools/typing.py:45:49 Matches
 
-  .../domdf_python_tools/domdf_python_tools/versions.py:240:22 Matches
+  .../domdf_python_tools/domdf_python_tools/typing.py:163:35 Matches
 
   .../domdf_python_tools/domdf_python_tools/utils.py:72:49 Matches
 
@@ -43,19 +53,33 @@ stdout: '.../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
 
   .../domdf_python_tools/domdf_python_tools/utils.py:251:10 Matches
 
-  .../domdf_python_tools/domdf_python_tools/typing.py:45:49 Matches
+  .../domdf_python_tools/domdf_python_tools/versions.py:28:19 Matches
 
-  .../domdf_python_tools/domdf_python_tools/typing.py:163:35 Matches
+  .../domdf_python_tools/domdf_python_tools/versions.py:68:18 Matches
+
+  .../domdf_python_tools/domdf_python_tools/versions.py:70:1 Matches
+
+  .../domdf_python_tools/domdf_python_tools/versions.py:240:22 Matches
 
   .../domdf_python_tools/domdf_python_tools/words.py:44:24 Matches
 
   .../domdf_python_tools/domdf_python_tools/words.py:176:11 Matches
 
-  .../domdf_python_tools/domdf_python_tools/doctools.py:34:34 Matches
+  .../domdf_python_tools/tests/mypy_test.py:2:24 Matches
 
-  .../domdf_python_tools/domdf_python_tools/doctools.py:314:56 Matches
+  .../domdf_python_tools/tests/mypy_test.py:5:37 Matches
 
-  .../domdf_python_tools/domdf_python_tools/doctools.py:379:16 Matches
+  .../domdf_python_tools/tests/mypy_test.py:8:8 Matches
+
+  .../domdf_python_tools/tests/mypy_test.py:21:16 Matches
+
+  .../domdf_python_tools/tests/mypy_test.py:22:7 Matches
+
+  .../domdf_python_tools/tests/test_bases.py:19:37 Matches
+
+  .../domdf_python_tools/tests/test_bases.py:22:13 Matches
+
+  .../domdf_python_tools/tests/test_bases.py:59:10 Matches
 
   .../domdf_python_tools/tests/test_doctools.py:18:37 Matches
 
@@ -95,29 +119,11 @@ stdout: '.../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
 
   .../domdf_python_tools/tests/test_typing.py:61:33 Matches
 
-  .../domdf_python_tools/tests/mypy_test.py:2:24 Matches
+  .../repo_helper_github/repo_helper_github/__init__.py:32:29 Matches
 
-  .../domdf_python_tools/tests/mypy_test.py:5:37 Matches
+  .../repo_helper_github/repo_helper_github/__init__.py:294:19 Matches
 
-  .../domdf_python_tools/tests/mypy_test.py:8:8 Matches
-
-  .../domdf_python_tools/tests/mypy_test.py:21:16 Matches
-
-  .../domdf_python_tools/tests/mypy_test.py:22:7 Matches
-
-  .../domdf_python_tools/tests/test_bases.py:19:37 Matches
-
-  .../domdf_python_tools/tests/test_bases.py:22:13 Matches
-
-  .../domdf_python_tools/tests/test_bases.py:59:10 Matches
-
-  .../domdf_python_tools/doc-source/latex_toctree_sections.py:2:24 Matches
-
-  .../domdf_python_tools/doc-source/latex_toctree_sections.py:69:26 Matches
-
-  .../domdf_python_tools/doc-source/patched_autosummary.py:3:24 Matches
-
-  .../domdf_python_tools/doc-source/patched_autosummary.py:28:26 Matches
+  .../repo_helper_github/repo_helper_github/__init__.py:431:27 Matches
 
   .../repo_helper_github/repo_helper_github/_types.py:27:19 Matches
 
@@ -125,11 +131,229 @@ stdout: '.../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
 
   .../repo_helper_github/repo_helper_github/_types.py:33:23 Matches
 
-  .../repo_helper_github/repo_helper_github/__init__.py:32:29 Matches
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/augment_defaults.py:69:19 Matches
 
-  .../repo_helper_github/repo_helper_github/__init__.py:294:19 Matches
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/augment_defaults.py:89:11 Matches
 
-  .../repo_helper_github/repo_helper_github/__init__.py:431:27 Matches
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autonamedtuple.py:119:24 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autonamedtuple.py:205:35 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autonamedtuple.py:300:21 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autoprotocol.py:132:34 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autoprotocol.py:200:14 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:5:48 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:7:47 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:22:59 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:45:53 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:130:34 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:151:17 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:154:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:157:37 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:165:14 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:211:8 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:228:38 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:246:16 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:289:49 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:291:41 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:381:30 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/overloads.py:79:39 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/overloads.py:217:14 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typehints.py:44:32 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typehints.py:119:42 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typehints.py:596:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typevars.py:107:24 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typevars.py:303:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/tweaks/latex_toc.py:38:24 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/tweaks/param_dash.py:78:19 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/tweaks/param_dash.py:95:9 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/tweaks/tabsize.py:18:27 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/assets.py:95:19 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/assets.py:132:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/github.py:34:27 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:157:34 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:194:64 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:220:27 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:230:13 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:271:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:299:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:350:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:397:10 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:444:8 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:478:44 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:486:7 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:506:44 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/installation.py:514:7 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/issues.py:100:19 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/issues.py:170:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/issues.py:218:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/pre_commit.py:109:35 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/pre_commit.py:137:21 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/pre_commit.py:145:23 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/rest_example.py:77:24 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/rest_example.py:133:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/source.py:76:19 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/source.py:100:11 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:65:34 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:140:14 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:148:20 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:156:18 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:172:18 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:185:18 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:200:18 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:258:18 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:543:24 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:544:13 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:545:8 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:550:68 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/testing.py:552:47 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:37:34 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:50:35 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:274:29 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:276:21 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:445:17 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:447:22 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:492:67 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/utils.py:507:9 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/wikipedia.py:78:19 Matches
+
+  .../sphinx-toolbox/sphinx_toolbox/wikipedia.py:103:11 Matches
+
+  .../sphinx-toolbox/tests/test_issues_output/conftest.py:30:24 Matches
+
+  .../sphinx-toolbox/tests/test_issues_output/conftest.py:56:15 Matches
+
+  .../sphinx-toolbox/tests/test_issues_output/conftest.py:59:23 Matches
+
+  .../sphinx-toolbox/tests/test_issues_output/conftest.py:69:9 Matches
+
+  .../sphinx-toolbox/tests/test_output/conftest.py:30:24 Matches
+
+  .../sphinx-toolbox/tests/test_output/conftest.py:56:15 Matches
+
+  .../sphinx-toolbox/tests/test_output/conftest.py:59:23 Matches
+
+  .../sphinx-toolbox/tests/test_output/conftest.py:69:9 Matches
+
+  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:30:24 Matches
+
+  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:56:15 Matches
+
+  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:59:23 Matches
+
+  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:69:9 Matches
+
+  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:30:24 Matches
+
+  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:56:15 Matches
+
+  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:59:23 Matches
+
+  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:69:9 Matches
+
+  .../sphinx-toolbox/tests/common.py:3:24 Matches
+
+  .../sphinx-toolbox/tests/common.py:10:10 Matches
+
+  .../sphinx-toolbox/tests/common.py:45:9 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:33:2 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:106:5 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:107:5 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:186:6 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:187:26 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:190:6 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:191:26 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:194:6 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_typehints.py:195:26 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_variables.py:3:24 Matches
+
+  .../sphinx-toolbox/tests/test_autodoc_variables.py:34:14 Matches
 
   .../sphinx-toolbox/tests/test_config.py:7:29 Matches
 
@@ -142,6 +366,12 @@ stdout: '.../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
   .../sphinx-toolbox/tests/test_config.py:49:14 Matches
 
   .../sphinx-toolbox/tests/test_config.py:70:14 Matches
+
+  .../sphinx-toolbox/tests/test_github.py:10:29 Matches
+
+  .../sphinx-toolbox/tests/test_github.py:34:14 Matches
+
+  .../sphinx-toolbox/tests/test_github.py:42:14 Matches
 
   .../sphinx-toolbox/tests/test_installation.py:12:29 Matches
 
@@ -177,11 +407,11 @@ stdout: '.../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
 
   .../sphinx-toolbox/tests/test_issues.py:44:22 Matches
 
-  .../sphinx-toolbox/tests/common.py:3:24 Matches
+  .../sphinx-toolbox/tests/test_rest_example.py:8:29 Matches
 
-  .../sphinx-toolbox/tests/common.py:10:10 Matches
+  .../sphinx-toolbox/tests/test_rest_example.py:11:31 Matches
 
-  .../sphinx-toolbox/tests/common.py:45:9 Matches
+  .../sphinx-toolbox/tests/test_rest_example.py:14:15 Matches
 
   .../sphinx-toolbox/tests/test_source.py:10:29 Matches
 
@@ -197,245 +427,15 @@ stdout: '.../domdf_python_tools/domdf_python_tools/bases.py:39:2 Matches
 
   .../sphinx-toolbox/tests/test_source.py:29:22 Matches
 
-  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:30:24 Matches
-
-  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:56:15 Matches
-
-  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:59:23 Matches
-
-  .../sphinx-toolbox/tests/test_source_output_sphinx/conftest.py:69:9 Matches
-
-  .../sphinx-toolbox/tests/test_github.py:10:29 Matches
-
-  .../sphinx-toolbox/tests/test_github.py:34:14 Matches
-
-  .../sphinx-toolbox/tests/test_github.py:42:14 Matches
-
   .../sphinx-toolbox/tests/test_testing.py:2:24 Matches
 
   .../sphinx-toolbox/tests/test_testing.py:45:28 Matches
-
-  .../sphinx-toolbox/tests/test_issues_output/conftest.py:30:24 Matches
-
-  .../sphinx-toolbox/tests/test_issues_output/conftest.py:56:15 Matches
-
-  .../sphinx-toolbox/tests/test_issues_output/conftest.py:59:23 Matches
-
-  .../sphinx-toolbox/tests/test_issues_output/conftest.py:69:9 Matches
-
-  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:30:24 Matches
-
-  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:56:15 Matches
-
-  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:59:23 Matches
-
-  .../sphinx-toolbox/tests/test_source_output_github/conftest.py:69:9 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_variables.py:3:24 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_variables.py:34:14 Matches
-
-  .../sphinx-toolbox/tests/test_rest_example.py:8:29 Matches
-
-  .../sphinx-toolbox/tests/test_rest_example.py:11:31 Matches
-
-  .../sphinx-toolbox/tests/test_rest_example.py:14:15 Matches
-
-  .../sphinx-toolbox/tests/test_output/conftest.py:30:24 Matches
-
-  .../sphinx-toolbox/tests/test_output/conftest.py:56:15 Matches
-
-  .../sphinx-toolbox/tests/test_output/conftest.py:59:23 Matches
-
-  .../sphinx-toolbox/tests/test_output/conftest.py:69:9 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_typehints.py:33:2 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_typehints.py:106:5 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_typehints.py:107:5 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_typehints.py:186:6 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_typehints.py:187:26 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_typehints.py:190:6 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_typehints.py:191:26 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_typehints.py:194:6 Matches
-
-  .../sphinx-toolbox/tests/test_autodoc_typehints.py:195:26 Matches
 
   .../sphinx-toolbox/autotypeddict_demo.py:9:35 Matches
 
   .../sphinx-toolbox/autotypeddict_demo.py:14:17 Matches
 
   .../sphinx-toolbox/autotypeddict_demo.py:28:19 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/pre_commit.py:109:35 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/pre_commit.py:137:21 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/pre_commit.py:145:23 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/rest_example.py:77:24 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/rest_example.py:133:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:157:34 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:194:64 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:220:27 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:230:13 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:271:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:299:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:350:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:397:10 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:444:8 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:478:44 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:486:7 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:506:44 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/installation.py:514:7 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:65:34 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:140:14 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:148:20 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:156:18 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:172:18 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:185:18 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:200:18 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:258:18 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:543:24 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:544:13 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:545:8 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:550:68 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/testing.py:552:47 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typevars.py:107:24 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typevars.py:303:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autoprotocol.py:132:34 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autoprotocol.py:200:14 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autonamedtuple.py:119:24 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autonamedtuple.py:205:35 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autonamedtuple.py:300:21 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/overloads.py:79:39 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/overloads.py:217:14 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typehints.py:44:32 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typehints.py:119:42 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/typehints.py:596:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/augment_defaults.py:69:19 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/augment_defaults.py:89:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:5:48 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:7:47 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:22:59 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:45:53 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:130:34 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:151:17 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:154:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:157:37 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:165:14 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:211:8 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:228:38 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:246:16 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:289:49 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:291:41 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/more_autodoc/autotypeddict.py:381:30 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/assets.py:95:19 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/assets.py:132:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/github.py:34:27 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/utils.py:37:34 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/utils.py:50:35 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/utils.py:274:29 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/utils.py:276:21 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/utils.py:445:17 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/utils.py:447:22 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/utils.py:492:67 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/utils.py:507:9 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/wikipedia.py:78:19 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/wikipedia.py:103:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/issues.py:100:19 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/issues.py:170:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/issues.py:218:11 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/tweaks/latex_toc.py:38:24 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/tweaks/param_dash.py:78:19 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/tweaks/param_dash.py:95:9 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/tweaks/tabsize.py:18:27 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/source.py:76:19 Matches
-
-  .../sphinx-toolbox/sphinx_toolbox/source.py:100:11 Matches
 
   219 matches in 53 files (searched 177 files).
 
