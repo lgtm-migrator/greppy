@@ -1,9 +1,9 @@
 stderr: ''
-stdout: ".../domdf_python_tools/doc-source/latex_toctree_sections.py:2:24\n  0 # stdlib\
-  \                                                                    \n  1 from\
-  \ typing import Any, Dict, List                                          \n❱ 2 \
+stdout: ".../domdf_python_tools/doc-source/latex_toctree_sections.py:2:24\n  1 # stdlib\
+  \                                                                    \n❱ 2 from\
+  \ typing import Any, Dict, List                                          \n  3 \
   \                                                                            \n\
-  \  3 # 3rd party                                                               \
+  \  4 # 3rd party                                                               \
   \  \n--------------------------------------------------------------------------------\n\
   .../domdf_python_tools/doc-source/latex_toctree_sections.py:69:26\n❱ 69 def setup(app:\
   \ Sphinx) -> Dict[str, Any]:                                  \n  70     \"\"\"\
@@ -182,10 +182,10 @@ stdout: ".../domdf_python_tools/doc-source/latex_toctree_sections.py:2:24\n  0 #
   \ str]):                                               \n  177     \"\"\"      \
   \                                                             \n  178     Represents\
   \ a Unicode pseudo-font.                                     \n--------------------------------------------------------------------------------\n\
-  .../domdf_python_tools/tests/mypy_test.py:2:24\n  0 # stdlib                   \
-  \                                                 \n  1 from typing import Any,\
-  \ Dict                                                \n❱ 2                    \
-  \                                                         \n  3 # this package \
+  .../domdf_python_tools/tests/mypy_test.py:2:24\n  1 # stdlib                   \
+  \                                                 \n❱ 2 from typing import Any,\
+  \ Dict                                                \n  3                    \
+  \                                                         \n  4 # this package \
   \                                                             \n--------------------------------------------------------------------------------\n\
   .../domdf_python_tools/tests/mypy_test.py:5:37\n  4 # this package             \
   \                                                 \n❱ 5 from domdf_python_tools.bases\
@@ -1179,10 +1179,10 @@ stdout: ".../domdf_python_tools/doc-source/latex_toctree_sections.py:2:24\n  0 #
   \ severe,                                          \n  28                 })   \
   \                                                      \n❱ 29         self.document\
   \ = AttrDict({\"settings\": settings, \"reporter\": reporte\n--------------------------------------------------------------------------------\n\
-  .../sphinx-toolbox/tests/test_testing.py:2:24\n  0 # stdlib                    \
-  \                                                \n  1 from typing import Any, Dict\
-  \                                                \n❱ 2                         \
-  \                                                    \n  3 # 3rd party         \
+  .../sphinx-toolbox/tests/test_testing.py:2:24\n  1 # stdlib                    \
+  \                                                \n❱ 2 from typing import Any, Dict\
+  \                                                \n  3                         \
+  \                                                    \n  4 # 3rd party         \
   \                                                        \n--------------------------------------------------------------------------------\n\
   .../sphinx-toolbox/tests/test_testing.py:45:28\n❱ 45 def __setup(app: Sphinx) ->\
   \ Dict[str, Any]:                                \n  46     \"\"\"             \

@@ -1,4 +1,4 @@
 stderr: ''
-stdout: ".../my_package/__init__.py:1:4\n  0 def foo(path: PathPlus, name: str) ->\
+stdout: ".../my_package/__init__.py:1:4\n❱ 1 def foo(path: PathPlus, name: str) ->\
   \ int: ...                              \n--------------------------------------------------------------------------------\n\
   1 match in 1 files (searched 1 files).\n"

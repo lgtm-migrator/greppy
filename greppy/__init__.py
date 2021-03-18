@@ -103,7 +103,7 @@ def greppy(
 					echo(f"{filename.as_posix()}:{lineno}:{match.span()[0]}")
 
 					context = lines[max(0, lineno - 3):lineno + 2]
-					start_line = max(lineno - 2, 0)
+					start_line = max(lineno - 2, 1)
 
 					while not context[0]:
 						context.pop(0)
