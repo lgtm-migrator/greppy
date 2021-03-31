@@ -92,7 +92,6 @@ def greppy(
 			click.echo(f"Error reading {filename.as_posix()}: {e}", err=True)
 			continue
 
-
 		for lineno, content in enumerate(lines):
 			lineno += 1
 			for match in pattern.finditer(content):
