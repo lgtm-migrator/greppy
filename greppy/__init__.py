@@ -111,7 +111,7 @@ def greppy(
 
 					syntax = Syntax(
 							'\n'.join(context),
-							lexer_name="python",
+							"python",
 							line_numbers=True,
 							start_line=start_line,
 							highlight_lines={lineno},
