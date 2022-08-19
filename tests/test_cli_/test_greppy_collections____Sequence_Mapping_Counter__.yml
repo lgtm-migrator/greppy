@@ -8,5 +8,6 @@ stdout: ".../domdf_python_tools/tests/test_pretty_print.py:868:5\n  867     def 
   \ = collections.Counter()                    \n  869         assert FancyPrinter(width=1).pformat(d)\
   \ == \"Counter()\"            \n❱ 870         d = collections.Counter(\"senselessness\"\
   )                          \n  871         check_file_regression(FancyPrinter(width=40).pformat(d),\
-  \ file_regr\n--------------------------------------------------------------------------------\n\
+  \ file_regr\n  872                                                             \
+  \              \n--------------------------------------------------------------------------------\n\
   2 matches in 1 files (searched 177 files).\n"
