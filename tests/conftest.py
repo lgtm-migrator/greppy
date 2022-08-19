@@ -1,5 +1,6 @@
 # stdlib
 from subprocess import PIPE, Popen
+from typing import Iterator
 
 # 3rd party
 import pytest
@@ -10,7 +11,7 @@ pytest_plugins = ("coincidence", )
 
 
 @pytest.fixture(scope="session")
-def cloned_repos():
+def cloned_repos() -> Iterator[PathPlus]:
 	with TemporaryPathPlus() as tmp_pathplus:
 		repo = Repo.clone_from(
 				"https://github.com/domdfcoding/domdf_python_tools",
@@ -36,11 +37,11 @@ def cloned_repos():
 
 
 @pytest.fixture()
-def fixed_sort_order(monkeypatch):
+def fixed_sort_order(monkeypatch) -> None:
 
 	original_iterchildren = PathPlus.iterchildren
 
-	def iterchildren(self, *args, **kwargs):
+	def iterchildren(self, *args, **kwargs):  # noqa: MAN002
 		return sort_paths(*original_iterchildren(self, *args, **kwargs))
 
 	monkeypatch.setattr(PathPlus, "iterchildren", iterchildren)

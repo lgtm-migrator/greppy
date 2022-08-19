@@ -53,11 +53,11 @@ __all__ = ["main"]
 @click.option("-i", "--ignore-case", is_flag=True, default=False, help="Ignore case.")
 @click_command(cls=MarkdownHelpCommand)
 def main(
-		pattern,
+		pattern: str,
 		dir: str = '.',  # noqa: A002  # pylint: disable=redefined-builtin
 		summary: bool = False,
 		ignore_case: bool = False,
-		):
+		) -> None:
 	"""
 	Recursively grep over Python files in the files in the given directory, and search for ``PATTERN``.
 	"""

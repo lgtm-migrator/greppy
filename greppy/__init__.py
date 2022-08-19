@@ -29,7 +29,7 @@ greppy: Recursively grep over Python files in the files in the given directory.
 # stdlib
 import re
 from functools import partial
-from typing import IO, Pattern, Set, Union
+from typing import IO, Optional, Pattern, Set, Union
 
 # 3rd party
 import click
@@ -55,7 +55,7 @@ def greppy(
 		search_dir: PathLike = '.',
 		*,
 		summary: bool = False,
-		file: IO = None,
+		file: Optional[IO] = None,
 		) -> Set[PathPlus]:
 	"""
 	Recursively grep over Python files in the files in the given directory, and search for ``pattern``.

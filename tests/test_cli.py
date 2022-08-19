@@ -10,10 +10,10 @@ from greppy.__main__ import main
 search_terms = ["Dict", r"(typing\.)?Dict", r"collections\.(Sequence|Mapping|Counter)", "CustomType"]
 
 
+@pytest.mark.usefixtures("fixed_sort_order")
 def test_greppy_simple(
 		tmp_pathplus: PathPlus,
 		advanced_data_regression: AdvancedDataRegressionFixture,
-		fixed_sort_order,
 		):
 
 	(tmp_pathplus / "my_package").mkdir()
@@ -49,10 +49,10 @@ def test_greppy_simple(
 	advanced_data_regression.check(data)
 
 
+@pytest.mark.usefixtures("fixed_sort_order")
 def test_greppy_non_utf8(
 		tmp_pathplus: PathPlus,
 		advanced_data_regression: AdvancedDataRegressionFixture,
-		fixed_sort_order,
 		):
 	(tmp_pathplus / "my_package").mkdir()
 	(tmp_pathplus / "my_package" / "__init__.py").write_lines(
@@ -71,13 +71,12 @@ def test_greppy_non_utf8(
 	advanced_data_regression.check(data)
 
 
+@pytest.mark.usefixtures("fixed_sort_order")
 @pytest.mark.parametrize("search_term", search_terms)
 def test_greppy(
 		cloned_repos: PathPlus,
 		advanced_data_regression: AdvancedDataRegressionFixture,
-		capsys,
 		search_term: str,
-		fixed_sort_order,
 		):
 
 	runner = CliRunner(mix_stderr=False)
@@ -91,13 +90,12 @@ def test_greppy(
 	advanced_data_regression.check(data)
 
 
+@pytest.mark.usefixtures("fixed_sort_order")
 @pytest.mark.parametrize("search_term", search_terms)
 def test_greppy_summary(
 		cloned_repos: PathPlus,
 		advanced_data_regression: AdvancedDataRegressionFixture,
-		capsys,
 		search_term: str,
-		fixed_sort_order,
 		):
 
 	runner = CliRunner(mix_stderr=False)
