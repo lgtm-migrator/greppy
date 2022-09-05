@@ -100,11 +100,11 @@ Installation
 
 .. toctree::
 	:maxdepth: 3
-	:caption: Documentation
 
 	usage
 	api
 	contributing
+	license
 	Source
 
 .. sidebar-links::
