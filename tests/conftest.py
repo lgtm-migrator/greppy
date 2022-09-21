@@ -20,7 +20,7 @@ def cloned_repos() -> Iterator[PathPlus]:
 		repo.git.checkout("63648712285eeaac6c26708e817c8c02595e165e")
 
 		with in_directory(tmp_pathplus / "domdf_python_tools"):
-			process = Popen(["tox", "-e", "build"], stdout=PIPE, stderr=PIPE)
+			process = Popen(["python3", "-m", "tox", "-e", "build"], stdout=PIPE, stderr=PIPE)
 			(output_, err) = process.communicate()
 			exit_code = process.wait()
 
