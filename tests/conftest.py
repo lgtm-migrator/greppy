@@ -5,7 +5,7 @@ from typing import Iterator
 # 3rd party
 import pytest
 from domdf_python_tools.paths import PathPlus, TemporaryPathPlus, in_directory, sort_paths
-from git import Repo  # type: ignore
+from git import Repo
 
 pytest_plugins = ("coincidence", )
 
